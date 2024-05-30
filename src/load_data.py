@@ -29,7 +29,7 @@ def load_json_files(doc_path):
     return data
 
 def load_gsm_data(is_socratic = False):
-    file_path = '../data/grade_school_math/data/'
+    file_path = 'data/grade_school_math/data/'
     if is_socratic:
         train_data = load_jsonl(file_path + 'train_socratic.jsonl')
         test_data = load_jsonl(file_path + 'test_socratic.jsonl')
@@ -39,7 +39,7 @@ def load_gsm_data(is_socratic = False):
     return train_data, test_data
 
 def load_math_data(math_type):
-    file_path = '../data/MATH/'
+    file_path = 'data/MATH/'
     if math_type == MATH_type.Algebra:
         train_data = load_json_files(file_path + 'train/algebra/')
         test_data = load_json_files(file_path + 'test/algebra/')

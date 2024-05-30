@@ -6,7 +6,7 @@ def initialize_llm(llm_model, llm_cache_path):
     client = get_llm(llm_model, llm_cache_path)
 
 
-def get_msg(content, role_information, logger):
+def get_msg(content, role_information):
     prompt = [
         {"role": "system", "content": role_information},
         {"role": "user", "content": content}
@@ -15,6 +15,6 @@ def get_msg(content, role_information, logger):
     ith = insert_request(prompt)
     completion = client.request(prompt, ith)
     if completion is None:
-        logger.info('No completion generated')
+        print('No completion generated')
         return None
     return completion.choices[0].message.content

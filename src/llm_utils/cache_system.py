@@ -3,7 +3,7 @@ import numpy as np
 import hashlib
 import dill
 import copy
-from openai import OpenAI
+from openai import OpenAI, AzureOpenAI
 import time
 
 def get_llm(llm_model, llm_cache_path, llm_temperature=1.0, llm_seed=0):
