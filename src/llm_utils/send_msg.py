@@ -16,6 +16,5 @@ def get_msg(content, role_information, logger):
     completion = client.request(prompt, ith)
     if completion is None:
         logger.info('No completion generated')
-        return None, -1
-
+        return None
     return completion.choices[0].message.content
