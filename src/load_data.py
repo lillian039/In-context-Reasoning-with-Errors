@@ -31,12 +31,12 @@ def load_json_files(doc_path):
 def load_gsm_data(is_socratic = False):
     file_path = 'data/grade_school_math/data/'
     if is_socratic:
-        train_data = load_jsonl(file_path + 'train_socratic.jsonl')
+        example_data = load_jsonl(file_path + 'train_example_socratic.jsonl')
         test_data = load_jsonl(file_path + 'test_socratic.jsonl')
     else:
-        train_data = load_jsonl(file_path + 'train.jsonl')
+        example_data = load_jsonl(file_path + 'train_example.jsonl')
         test_data = load_jsonl(file_path + 'test.jsonl')
-    return train_data, test_data
+    return example_data, test_data
 
 def load_math_data(math_type):
     file_path = 'data/MATH/'

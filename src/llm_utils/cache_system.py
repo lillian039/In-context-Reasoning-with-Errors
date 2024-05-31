@@ -42,7 +42,10 @@ class LLM:
         self.default_kwargs = default_kwargs if default_kwargs is not None else dict()
         
         # TODO: add api key
-        self.client = OpenAI()
+        self.client = OpenAI(
+            api_key='sk-eYT6k63VWtNQo4G24a068397AfBb49258aC5Cb3f96A3C3Da',
+            base_url="https://lonlie.plus7.plus/v1"
+        )
     def request(self, prompt, nth, kwargs=None):
         if kwargs is None:
             kwargs = copy.deepcopy(self.default_kwargs)

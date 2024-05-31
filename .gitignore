@@ -1,4 +1,4 @@
-result/
 **/__pycache__/
 .DS_Store
 src/llm_utils/cache_system.py
+log/
