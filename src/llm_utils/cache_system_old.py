@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import hashlib
-import pickle
+import dill
 import copy
 from openai import OpenAI, AzureOpenAI
 import time
@@ -62,9 +62,9 @@ class LLM:
         # Handle cache
         if request_id in self.caches and self.seed in self.caches[request_id]['index'] and nth < len(self.caches[request_id]['index'][self.seed]):
             cache = self.caches[request_id]
-        elif os.path.exists(os.path.join(self.cache_path, request_id+'.pkl')):
-            with open(os.path.join(self.cache_path, request_id+'.pkl'), 'rb') as f:
-                cache = pickle.load(f)
+        elif os.path.exists(os.path.join(self.cache_path, request_id+'.dill')):
+            with open(os.path.join(self.cache_path, request_id+'.dill'), 'rb') as f:
+                cache = dill.load(f)
         else:
             cache = {'responds': [], 'index': {}}
         if self.seed in cache['index']:
@@ -90,8 +90,8 @@ class LLM:
 
         # Save cache
         self.caches[request_id] = cache
-        with open(os.path.join(self.cache_path, request_id+'.pkl'), 'wb') as f:
-            pickle.dump(cache, f)
+        with open(os.path.join(self.cache_path, request_id+'.dill'), 'wb') as f:
+            dill.dump(cache, f)
 
         return response
     
@@ -103,9 +103,9 @@ class LLM:
         )).encode('utf-8')).hexdigest()
         if request_id in self.caches and self.seed in self.caches[request_id]['index'] and nth < len(self.caches[request_id]['index'][self.seed]):
             cache = self.caches[request_id]
-        elif os.path.exists(os.path.join(self.cache_path, request_id+'.pkl')):
-            with open(os.path.join(self.cache_path, request_id+'.pkl'), 'rb') as f:
-                cache = pickle.load(f)
+        elif os.path.exists(os.path.join(self.cache_path, request_id+'.dill')):
+            with open(os.path.join(self.cache_path, request_id+'.dill'), 'rb') as f:
+                cache = dill.load(f)
         else:
             cache = {'responds': [], 'index': {}}
         
@@ -132,8 +132,8 @@ class LLM:
 
         # Save cache
         self.caches[request_id] = cache
-        with open(os.path.join(self.cache_path, request_id+'.pkl'), 'wb') as f:
-            pickle.dump(cache, f)
+        with open(os.path.join(self.cache_path, request_id+'.dill'), 'wb') as f:
+            dill.dump(cache, f)
 
         return response
 
