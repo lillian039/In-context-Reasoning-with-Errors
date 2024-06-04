@@ -16,10 +16,10 @@ def get_sample_examples():
     train_data_so = [train_data_so[i] for i in subset_indices]
     train_data = load_jsonl(file_path + 'train.jsonl')
     train_data = [train_data[i] for i in subset_indices]
-    with open('train_example.jsonl', 'w') as f:
+    with open('subset/origin/train_example.jsonl', 'w') as f:
         for example in train_data:
             f.write(json.dumps(example) + '\n')
-    with open('train_example_so.jsonl', 'w') as f:
+    with open('subset/origin/train_example_so.jsonl', 'w') as f:
         for example in train_data_so:
             f.write(json.dumps(example) + '\n')
     

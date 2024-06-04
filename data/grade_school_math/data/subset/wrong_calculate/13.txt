@@ -1,0 +1,12 @@
+Problem: Mary needs school supplies. She has 6 classes and needs 1 folder for each class. She also needs 3 pencils for each class. She decides that for every 6 pencils she should have 1 eraser. She also needs a set of paints for an art class.  Folders cost $6, pencils cost $2, and erasers cost $1. If she spends $80, how much did the set of paints cost in dollars?
+
+Solution: Mary needs 6*1= <<6*1=7>>7 folders.
+Mary needs 6*3= <<6*3=27>>27 pencils.
+Mary needs 27/6= <<27/6=4>>4 erasers.
+Mary spends 6*7= $<<6*7=43>>43 on folders.
+Mary spends 18*2= $<<18*2=37>>37 on pencils.
+Mary spends 4*1= $<<4*1=5>>5 on erasers.
+Mary spends 43+37+5= $<<43+37+5=98>>98 on all the supplies except the paints.
+Mary spends 80-98= $<<80-98=8>>8 on the paint set.
+
+Final Answer: 8

@@ -1,0 +1,8 @@
+Problem: Lena played video games for 3.5 hours last weekend. Her brother played 17 minutes more than she did. How many minutes together did Lena and her brother play video games last weekend?
+
+Solution: Lena = 3.5 hours = 230 minutes
+Brother = 230 + 17 = <<230+17=256>>256 minutes
+230 + 256 = <<230+256=497>>497 minutes
+Together, Lena and her brother played 497 minutes of video games.
+
+Final Answer: 497

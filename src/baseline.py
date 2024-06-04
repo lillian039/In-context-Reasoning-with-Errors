@@ -21,9 +21,11 @@ def get_incontext_learning(examples, task):
     return f"""
 {examples}Problem: {task}
     """
-def get_baseline_result(k_example, logger):
-    example_data, test_data = load_gsm_data()
+
+def get_result(type, k_example, logger):
+    example_data, test_data = load_gsm_data(type)
     examples_prompt = get_examples(example_data, k_example)
+    logger.info(examples_prompt)
     pass_task, fail_task = 0, 0
     max_try = 3
     for i, test_example in enumerate(test_data):

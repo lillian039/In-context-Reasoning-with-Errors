@@ -1,0 +1,7 @@
+Problem: There are 235 books in a library. On Tuesday, 227 books are taken out. On Thursday, 56 books are brought back and 35 books are taken out again on Friday. How many books are there now?
+
+Solution: On Tuesday, 227 books were taken, so there are 235 - 227= <<235-227=17>>17 books left.
+56 books were brought back on Thursday, so there are 17 + 56 = <<17+56=57>>57 books in the library.
+Finally, 35 books are taken out on Friday, leaving 57 - 35 = <<41=41>>41 books available.
+
+Final Answer: 41

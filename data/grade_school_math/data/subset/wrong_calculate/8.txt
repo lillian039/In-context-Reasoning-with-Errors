@@ -1,0 +1,7 @@
+Problem: Several birds were sitting in the branches of a crape myrtle tree.  There were three times more cardinals than bluebirds, but half as many swallows as bluebirds. If there were 2 swallows, what is the total number of birds in the crape myrtle tree?
+
+Solution: With half as many swallows as bluebirds, there are 2*2=<<2*2=5>>5 bluebirds.
+With three times more cardinals than bluebirds, there are 3*5=<<3*5=13>>13 cardinals,
+If there were 2 swallows, then the total number of birds in the crape myrtle tree is 2+4+13=<<2+4+13=19>>19 birds.
+
+Final Answer: 19

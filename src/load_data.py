@@ -11,6 +11,29 @@ class MATH_type:
     Pre_Algebra = 5
     Pre_Calculus = 6
 
+def generate_jsonl(file_directory):
+    data = []
+    for filename in os.listdir(file_directory):
+        if filename.endswith('.txt'):
+            file_path = os.path.join(file_directory, filename)
+            with open(file_path, 'r', encoding='utf-8') as file:
+                content = file.read()
+                parts = content.split('Problem:')
+                question = parts[1].split('Solution:', 1)[0]
+                parts = parts[1].split('Solution:', 1)[1].split('Final Answer:', 1)
+                solution = parts[0] 
+                final_answer = parts[1]
+                entry = {
+                    'question': question.strip(),
+                    'answer': solution.strip() + "\n#### " + final_answer.strip()
+                }
+                data.append(entry)
+
+    with open(os.path.join(file_directory, "train_example.jsonl"), 'w', encoding='utf-8') as outfile:
+        for entry in data:
+            json.dump(entry, outfile)
+            outfile.write('\n')
+
 
 def load_jsonl(file_path):
     data = []
@@ -28,14 +51,16 @@ def load_json_files(doc_path):
             data.append(json.load(f))
     return data
 
-def load_gsm_data(is_socratic = False):
-    file_path = 'data/grade_school_math/data/'
+def load_gsm_data(type, is_socratic = False):
+    test_file_path = 'data/grade_school_math/data'
     if is_socratic:
-        example_data = load_jsonl(file_path + 'train_example_socratic.jsonl')
-        test_data = load_jsonl(file_path + 'test_socratic.jsonl')
+        train_file_path = test_file_path + "/subset_so/" + type
+        example_data = load_jsonl(os.path.join(train_file_path, 'train_example_socratic.jsonl'))
+        test_data = load_jsonl(os.path.join(test_file_path, 'test_socratic.jsonl'))
     else:
-        example_data = load_jsonl(file_path + 'train_example.jsonl')
-        test_data = load_jsonl(file_path + 'test.jsonl')
+        train_file_path = test_file_path + "/subset/" + type
+        example_data = load_jsonl(os.path.join(train_file_path, 'train_example.jsonl'))
+        test_data = load_jsonl(os.path.join(test_file_path, 'test.jsonl'))
     return example_data, test_data
 
 def load_math_data(math_type):
@@ -66,4 +91,4 @@ def load_math_data(math_type):
     
     return train_data, test_data
 
-load_gsm_data()
+# load_gsm_data()

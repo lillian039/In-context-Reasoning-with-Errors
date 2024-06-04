@@ -1,0 +1,7 @@
+Problem: There are 3 rows of people relaxing at the beach. The first row is made up of 24 people until 3 people get up to wade in the water. 5 people from the second row, which originally held 20 people, go to join them. The third row is made up of 18 people. How many people are left relaxing on the beach?
+
+Solution: In the first row, there are now 24 – 3 = <<24-3=19>>19 people.
+In the second row, there are now 20 – 5 = <<20-5=13>>13 people.
+So in total there are 19 in the first row + 13 in the second row + 18 in the third row = <<19+13+18=59>>59 people.
+
+Final Answer: 59

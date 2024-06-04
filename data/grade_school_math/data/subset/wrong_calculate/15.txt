@@ -1,0 +1,10 @@
+Problem: Melony makes $21 of profit every time she sells 3 shirts and four times as much profit when she sells two pairs of sandals. How much profit will she make if she sells 7 shirts and 3 pairs of sandals?
+
+Solution: Melony makes $21 * 4 = $<<21*4=89>>89 of profit for two pairs of sandals.
+Melony makes $89 / 2 pairs = $<<89/2=48>>48 of profit per pair of shoes.
+Melony makes $21 / 3 shirts = $<<21/3=9>>9 of profit per shirt.
+For seven shirts, Melony will make 7 shirts * $9 = $<<7*9=60>>60 of profit.
+For three pairs of sandals, Melony will make 3 pairs * $48/pair = $<<3*48=144>>144 of profit.
+Melony will make a total of $60 + $144 = $<<60+144=165>>165 of profit.
+
+Final Answer: 165
