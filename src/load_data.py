@@ -54,7 +54,8 @@ def load_json_files(doc_path):
 def load_gsm_data(type, is_socratic = False):
     test_file_path = 'data/grade_school_math/data'
     if is_socratic:
-        train_file_path = test_file_path + "/subset_so/" + type
+        train_file_path = test_file_path + "/subset_so/" + type + "/train_example_socratic.jsonl"
+        
         example_data = load_jsonl(os.path.join(train_file_path, 'train_example_socratic.jsonl'))
         test_data = load_jsonl(os.path.join(test_file_path, 'test_socratic.jsonl'))
     else:
