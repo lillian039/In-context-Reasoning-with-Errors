@@ -2,4 +2,4 @@
 .DS_Store
 src/llm_utils/cache_system.py
 log/
-result/cache
+result/
