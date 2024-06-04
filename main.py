@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser(description='llm')
 
 parser.add_argument('--model', type=str, default="gpt", help='llm model')
 parser.add_argument('--type', type=str, default="origin", help='example type')
-parser.add_argument('--num', type=str, default=4, help='example number')
+parser.add_argument('--num', type=int, default=4, help='example number')
 
 args = parser.parse_args()
 
