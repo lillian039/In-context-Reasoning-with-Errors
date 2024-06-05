@@ -1,0 +1,8 @@
+Problem: Marta was about to start the school year and needed to buy the necessary textbooks. She managed to buy five on sale, for $10 each. She had to order two textbooks online, which cost her a total of $40, and three she bought directly from the bookstore for a total of three times the cost of the online ordered books. How much in total did Martha spend on textbooks?
+
+Solution: Marta bought five textbooks on sale, for a total of 5 * 10 = $<<5*10=50>>50.
+She ordered two textbooks online, for a total of 2 * 40 = $<<2*40=80>>80.
+Three textbooks from the bookstore had a cost of 3 * 3 * 40 = $<<3*3*40=360>>360.
+That means that Marta spent in total 50 + 80 + 360 = $<<50+80+360=490>>490 on textbooks.
+
+Final Answer: 490

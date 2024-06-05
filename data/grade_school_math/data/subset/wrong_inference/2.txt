@@ -1,0 +1,7 @@
+Problem: Gilbert grows herbs in his yard to use in his cooking. At the beginning of the spring, he planted three basil bushes, a parsley plant, and two kinds of mint. Halfway through spring, one of the basil plants dropped seeds from a flower and made an extra basil plant grow. However, a rabbit came by the garden near the end of spring and ate all the mint. How many herb plants did Gilbert have when spring ended?
+
+Solution: Gilbert planted 3 + 1 + 2 = <<3+1+2=6>>6 herb plants.
+He gained a basil plant when one of the basil plants seeded a new plant, so he had 3 + 1 = <<3+1=4>>4 basil bushes.
+The rabbit ate both mint plants, so Gilbert had 4 + 2 = <<4+2=6>>6 herb plants when spring ended.
+
+Final Answer: 6

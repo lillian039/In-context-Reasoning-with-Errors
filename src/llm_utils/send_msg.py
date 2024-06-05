@@ -21,3 +21,5 @@ def get_msg(content, role_information):
         return completion.choices[0].message.content
     elif 'mistral' in client.model:
         return completion
+    elif 'llama' in client.model:
+        return completion[0]['generation']['content']

@@ -1,7 +1,7 @@
 # In-context-Reasoning-with-Errors
 
 
-Set up environment for mistral-7B
+### Set up environment for mistral-7B
 ```
 https://github.com/mistralai/mistral-inference/blob/main/README.md
 ```
@@ -16,3 +16,8 @@ https://github.com/mistralai/mistral-inference/blob/main/README.md
   ```
 
 - Follow the instructions in the github repo's README file
+
+### Run
+```
+bash run.sh --model [gpt/mistral/llama/] --type [origin/wc/wi/...] --num [4/8/...] --max_task [500/1000/...]
+```

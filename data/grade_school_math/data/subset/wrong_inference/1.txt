@@ -1,0 +1,10 @@
+Problem: A chocolate box contains 200 bars. Thomas and his 4 friends take 1/4 of the bars and decide to divide them equally between them. One of Thomas's friends doesn't like chocolate bars very much and returns 5 of his bars to the box. Later, his sister Piper comes home and takes 5 fewer bars than those taken in total by Thomas and his friends so she can also share with her friends. What's the total number of bars left in the box?
+
+Solution: Thomas and his friends took 1/4*200 = <<1/4*200=50>>50 bars.
+A friend returned 5 bars, so they finally took 50 - 5 = <<50-5=45>>45 bars.
+Since there are five of them sharing, each of them got 45/5 = <<45/5=9>>9 bars.
+Piper took five fewer bars than Thomas and his 4 friends, that is (9-5)*5 = <<(9-5)*5=20>>20 bars.
+All the kids took 45 + 20 = <<45+20=65>>65 bars.
+The total remaining bars left in the box is 200 - 65 = <<200-65=135>>135 bars.
+
+Final Answer: 135

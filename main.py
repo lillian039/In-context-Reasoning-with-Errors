@@ -1,5 +1,5 @@
 from src.llm_utils.send_msg import initialize_llm
-from src.baseline import get_result
+from pipeline import get_result
 from src.utils.logger import get_logger
 import os
 import argparse
@@ -8,8 +8,8 @@ parser = argparse.ArgumentParser(description='llm')
 
 parser.add_argument('--model', type=str, default="gpt", help='llm model')
 parser.add_argument('--type', type=str, default="origin", help='example type')
-parser.add_argument('--num', type=int, default=4, help='example number')
-parser.add_argument('--max_task', type=int, default=200, help='example number')
+parser.add_argument('--num', type=int, default=4, help='example numbers')
+parser.add_argument('--max_task', type=int, default=500, help='Q&A numbers')
 
 args = parser.parse_args()
 
@@ -34,6 +34,8 @@ def main():
         model_name = 'gpt-3.5-turbo-1106'
     elif args.model == "mistral":
         model_name = 'mistral-7B'
+    elif args.model == "llama":
+        model_name = 'llama-7B'
     initialize_llm(model_name, 'result/cache')
     result = get_result(args.type, args.num, logger, args.max_task)
     print(result)
