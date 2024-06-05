@@ -40,12 +40,25 @@ class LLM:
         self.caches = {}
         self.seed = seed
         self.default_kwargs = default_kwargs if default_kwargs is not None else dict()
+        self.model = self.default_kwargs['model']
         
         # TODO: add api key
-        self.client = OpenAI(
-            api_key='sk-eYT6k63VWtNQo4G24a068397AfBb49258aC5Cb3f96A3C3Da',
-            base_url="https://lonlie.plus7.plus/v1"
-        )
+        if 'gpt' in self.default_kwargs['model']:
+            self.client = OpenAI(
+                api_key='sk-eYT6k63VWtNQo4G24a068397AfBb49258aC5Cb3f96A3C3Da',
+                base_url="https://lonlie.plus7.plus/v1"
+            )
+        elif self.default_kwargs['model'] == 'mistral-7B':
+            from mistral_inference.model import Transformer
+            from mistral_inference.generate import generate
+
+            from mistral_common.tokens.tokenizers.mistral import MistralTokenizer
+            from mistral_common.protocol.instruct.messages import UserMessage
+            from mistral_common.protocol.instruct.request import ChatCompletionRequest
+            self.client = Transformer.from_folder("/userhome/hukeya/mistral_models/7B_instruct")  # change to extracted model dir
+            self.tokenizer = MistralTokenizer.from_file("/userhome/hukeya/mistral_models/7B_instruct/tokenizer.model.v3")  # change to extracted tokenizer file
+
+
     def request(self, prompt, nth, kwargs=None):
         if kwargs is None:
             kwargs = copy.deepcopy(self.default_kwargs)
@@ -139,11 +152,20 @@ class LLM:
 
 
     def _new_request(self, prompt, kwargs):
-        chat_completion = self.client.chat.completions.create(
-            messages=prompt,
-            **kwargs,
-        )
+        if 'gpt' in kwargs['model']:
+            chat_completion = self.client.chat.completions.create(
+                messages=prompt,
+                **kwargs,
+            )
+        elif 'mistral' in kwargs['model']:
+            completion_request = ChatCompletionRequest(messages=[UserMessage(content=prompt[1]['content'])])
+
+            tokens = self.tokenizer.encode_chat_completion(completion_request).tokens
+
+            out_tokens, _ = generate([tokens], self.client, max_tokens=512, temperature=1.0, eos_id=self.tokenizer.instruct_tokenizer.tokenizer.eos_id)
+            chat_completion = self.tokenizer.instruct_tokenizer.tokenizer.decode(out_tokens[0])
         return chat_completion
+    
     def new_request(self, prompt, kwargs):
         # TODO: Handle rate limit & retry
         try:

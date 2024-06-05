@@ -17,4 +17,7 @@ def get_msg(content, role_information):
     if completion is None:
         print('No completion generated')
         return None
-    return completion.choices[0].message.content
+    if 'gpt' in client.model:
+        return completion.choices[0].message.content
+    elif 'mistral' in client.model:
+        return completion
