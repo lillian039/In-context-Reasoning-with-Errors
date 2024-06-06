@@ -41,22 +41,27 @@ class LLM:
         self.seed = seed
         self.default_kwargs = default_kwargs if default_kwargs is not None else dict()
         self.model = self.default_kwargs['model']
-        
-        # TODO: add api key
-        if 'gpt' in self.default_kwargs['model']:
-            self.client = OpenAI(
-                api_key='sk-eYT6k63VWtNQo4G24a068397AfBb49258aC5Cb3f96A3C3Da',
-                base_url="https://lonlie.plus7.plus/v1"
-            )
-        elif self.default_kwargs['model'] == 'mistral-7B':
+        print(self.default_kwargs['model'])
+        if 'mistral' in self.default_kwargs['model']:
             from mistral_inference.model import Transformer
             from mistral_inference.generate import generate
 
             from mistral_common.tokens.tokenizers.mistral import MistralTokenizer
             from mistral_common.protocol.instruct.messages import UserMessage
             from mistral_common.protocol.instruct.request import ChatCompletionRequest
+
+        # TODO: add api key
+        if 'gpt' in self.default_kwargs['model']:
+            self.client = OpenAI(
+                api_key='sk-eYT6k63VWtNQo4G24a068397AfBb49258aC5Cb3f96A3C3Da',
+                base_url="https://lonlie.plus7.plus/v1"
+            )
+        elif self.default_kwargs['model'] == 'mistral-7B-instruct':
             self.client = Transformer.from_folder("/userhome/hukeya/mistral_models/7B_instruct")  # change to extracted model dir
             self.tokenizer = MistralTokenizer.from_file("/userhome/hukeya/mistral_models/7B_instruct/tokenizer.model.v3")  # change to extracted tokenizer file
+        elif self.default_kwargs['model'] == 'mistral-7B-raw':
+            self.client = Transformer.from_folder("/userhome/hukeya/mistral_models/7B")  # change to extracted model dir
+            self.tokenizer = MistralTokenizer.from_file("/userhome/hukeya/mistral_models/7B/tokenizer.model.v3")  # change to extracted tokenizer file
         elif 'llama-7B' in self.default_kwargs['model']:
             from llama import Llama
 
@@ -66,7 +71,6 @@ class LLM:
                 max_seq_len=2048,
                 max_batch_size=4,
             )
-
 
     def request(self, prompt, nth, kwargs=None):
         if kwargs is None:
@@ -167,6 +171,12 @@ class LLM:
                 **kwargs,
             )
         elif 'mistral' in kwargs['model']:
+            from mistral_inference.model import Transformer
+            from mistral_inference.generate import generate
+
+            from mistral_common.tokens.tokenizers.mistral import MistralTokenizer
+            from mistral_common.protocol.instruct.messages import UserMessage
+            from mistral_common.protocol.instruct.request import ChatCompletionRequest
             completion_request = ChatCompletionRequest(messages=[UserMessage(content=prompt[1]['content'])])
 
             tokens = self.tokenizer.encode_chat_completion(completion_request).tokens

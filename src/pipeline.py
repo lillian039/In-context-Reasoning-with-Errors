@@ -37,6 +37,15 @@ def get_incontext_learning(examples, task):
 {examples}Problem: {task}
     """
 
+def get_zero_shot_learning(task):
+    return f"""
+Problem: {task}
+
+Please give the solution of the math question and give the final answer in the following format, final answer should only contains the final number.
+Solution: [solution]
+Final Answer: [final answer]
+    """
+
 def get_result(type, k_example, logger, max_task):
     example_data, test_data = load_gsm_data(type)
     if_solution = type != "no_solution"
@@ -48,7 +57,10 @@ def get_result(type, k_example, logger, max_task):
     pass_task, fail_task = 0, 0
     max_try = 5
     for i, test_example in enumerate(test_data):
-        content = get_incontext_learning(examples_prompt, test_example['question'])
+        if type == 'zero_shot':
+            content = get_zero_shot_learning(test_example['question'])
+        else:
+            content = get_incontext_learning(examples_prompt, test_example['question'])
         if if_solution:
             system = "Please give the solution of the math question and give the final answer."
         else:
@@ -60,7 +72,6 @@ def get_result(type, k_example, logger, max_task):
                 response = get_msg(content, system)
             else:
                 break
-        
         try:
             final_answer = response.split("Final Answer:")[1].strip()
             match = re.search(r'\d', final_answer)

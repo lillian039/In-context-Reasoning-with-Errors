@@ -30,13 +30,20 @@ def main():
         logger_name = "no_solution"
     elif args.type == 'swap':
         logger_name = "swap"
+    elif args.type == 'zs':
+        logger_name = "zero_shot"
+        args.type = "zero_shot" 
+
     logger = get_logger(logger_name)
     for arg, value in vars(args).items():
         logger.info(f"{arg}: {value}")
+        
     if args.model == "gpt" :
         model_name = 'gpt-3.5-turbo-1106'
+    elif args.model == "mistral-instruct":
+        model_name = 'mistral-7B-instruct'
     elif args.model == "mistral":
-        model_name = 'mistral-7B'
+        model_name = 'mistral-7B-raw'
     elif args.model == "llama":
         model_name = 'llama-7B'
     initialize_llm(model_name, 'result/cache')
