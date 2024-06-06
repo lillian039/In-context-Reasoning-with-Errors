@@ -22,4 +22,4 @@ def get_msg(content, role_information):
     elif 'mistral' in client.model:
         return completion
     elif 'llama' in client.model:
-        return completion[0]['generation']['content']
+        return completion[0]['generation']

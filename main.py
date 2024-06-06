@@ -1,5 +1,5 @@
 from src.llm_utils.send_msg import initialize_llm
-from pipeline import get_result
+from src.pipeline import get_result
 from src.utils.logger import get_logger
 import os
 import argparse
@@ -22,6 +22,9 @@ def main():
     elif args.type == "wc" :
         args.type = "wrong_calculate"
         logger_name = "wrong_calculate"
+    elif args.type == "wi":
+        args.type = "wrong_inference"
+        logger_name = "wrong_inference"
     elif args.type == 'ns':
         args.type = "no_solution"
         logger_name = "no_solution"
@@ -38,6 +41,7 @@ def main():
         model_name = 'llama-7B'
     initialize_llm(model_name, 'result/cache')
     result = get_result(args.type, args.num, logger, args.max_task)
+    logger.info(result)
     print(result)
 
 main()

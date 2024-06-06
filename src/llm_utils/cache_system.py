@@ -61,7 +61,7 @@ class LLM:
             from llama import Llama
 
             self.generator = Llama.build(
-                ckpt_dir="../llama/llama-2-7b-chat/",
+                ckpt_dir="../llama/llama-2-7b/",
                 tokenizer_path="../llama/tokenizer.model",
                 max_seq_len=2048,
                 max_batch_size=4,
@@ -176,12 +176,14 @@ class LLM:
         elif 'llama-7B' in kwargs['model']:
             from llama import Dialog
             from typing import List
-            prompt = [
-                {"role": "system", "content": "You are a helpful assistant. You only need to answer the last question. There are solutions to some math questions for reference. Please follow the format of the examples."},
-                {"role": "user", "content": prompt[1]['content']}
-            ]
-            prompts : List[Dialog] = [prompt,]
-            chat_completion = self.generator.chat_completion(
+            system_content = "You are a helpful assistant. You only need to answer the last question. There are solutions to some math questions for reference. Please follow the format of the examples."
+            # prompt = [
+            #     {"role": "system", "content": "You are a helpful assistant. You only need to answer the last question. There are solutions to some math questions for reference. Please follow the format of the examples."},
+            #     {"role": "user", "content": prompt[1]['content']}
+            # ]
+            prompt = system_content + "\n" + prompt[1]['content']
+            prompts : List[str] = [prompt,]
+            chat_completion = self.generator.text_completion(
                     prompts,
                     max_gen_len=512,
                     temperature=0.6,
