@@ -1,0 +1,8 @@
+Describe the problem, solution, and final answer of the above question for kindergarten children, but do not change the number in the problem. 不要有美元符号
+Problem: Lena had a fun time playing video games last weekend. She played for as long as it takes to watch a really long cartoon, which was 3 hours and 30 minutes. That's the same as 3.5 hours. Lena's brother also played video games and he played even longer. He played for 17 minutes more than Lena did. We want to find out how many minutes they played in total.
+
+Solution: First, let's find out how long Lena played in minutes. We know that 1 hour has 60 minutes, so 3 hours is 3 times 60, which is 180 minutes. And 30 minutes is just that, 30 minutes. If we add them together, 180 minutes plus 30 minutes, we get 210 minutes. So Lena played for 210 minutes.
+Now, let's find out how long her brother played. He played 17 minutes more than Lena, so we add 17 minutes to Lena's 210 minutes. That gives us 210 minutes plus 17 minutes, which equals 227 minutes.
+Finally, to find out how many minutes they played together, we add Lena's time to her brother's time. So we add 210 minutes and 227 minutes together, and we get 437 minutes.
+
+Final Answer: 437

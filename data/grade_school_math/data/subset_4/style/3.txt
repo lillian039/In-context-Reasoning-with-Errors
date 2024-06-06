@@ -1,0 +1,5 @@
+Problem: Marta is getting ready for the new school year, and she needs to buy some textbooks. She found five books on sale, ten dollars each. She also ordered two books online, which cost her forty dollars in total. Finally, she bought three books directly from the bookstore, and the total cost of these books was three times the cost of the books she ordered online. How much did Marta spend on textbooks in total?
+
+Solution: Marta bought five books on sale, with a total cost of five times ten, which is fifty dollars. The three books from the bookstore cost three times forty, which is one hundred and twenty dollars. That means Marta's total expenditure on textbooks was fifty plus forty plus one hundred and twenty, which equals two hundred and ten dollars.
+
+Final Answer: 210

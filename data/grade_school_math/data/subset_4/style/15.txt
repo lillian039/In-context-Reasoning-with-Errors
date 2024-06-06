@@ -1,0 +1,7 @@
+Problem: Melony has a little shop where she sells shirts and sandals. When she sells a group of 3 shirts, she makes 21 dollars in profit. Now, selling sandals is even more exciting because when she sells two pairs, her profit is four times bigger than selling 3 shirts. We want to find out how much profit she will make if she sells 7 shirts and 3 pairs of sandals.
+
+Solution: Let's see how much profit Melony makes from the sandals. If selling two pairs of sandals gives her four times the profit of selling 3 shirts, then it's 21 dollars times 4, which equals 84 dollars for two pairs of sandals. To find out how much profit she makes for just one pair of sandals, we divide 84 dollars by 2, and that gives us 42 dollars per pair of sandals.
+Now, let's look at the shirts. If 3 shirts give her 21 dollars in profit, then one shirt would give her 21 dollars divided by 3, which is 7 dollars in profit per shirt.
+If Melony sells 7 shirts, she will make 7 times 7 dollars, which is 49 dollars in profit from the shirts. And if she sells 3 pairs of sandals, she will make 3 times 42 dollars, which is 126 dollars in profit from the sandals.
+
+Final Answer: 175

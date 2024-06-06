@@ -1,0 +1,5 @@
+Problem: Once upon a time in a school, there was a rule for the big kids, like Hazel, who are called seniors. The school year has 180 days, and if a senior misses only a tiny bit of it—just 5% or less—they don't have to take their big, important end-of-year tests. Hazel, unfortunately, got sick and had to stay home for 6 days. Now, we want to find out how many more days she can stay home and still not have to take those big tests.
+
+Solution: Let's help Hazel figure out how many days she can still miss. If 5% of the school year is allowed for missing, we count 5 out of every 100 days, which means she can miss 9 days (because 180 days times 5%, or 180 times 0.05, equals 9 days). Hazel has already missed 6 days, so we need to see how many more days are left in that 9 days. We subtract the 6 days she already missed from the 9 days she can miss: 9 days minus 6 days she's been sick equals 3 more days.
+
+Final Answer: 3

@@ -1,0 +1,7 @@
+Problem: Once upon a time in a beautiful park, there was a pretty tree called a crape myrtle. This tree was home to some lovely birds. Some were bright red cardinals, some were pretty blue bluebirds, and some were swift swallows. We are going to play a fun counting game to find out how many of each bird were sitting on the tree branches. We know that there were 2 swallows, which are like the smallest group. The bluebirds are twice as many as the swallows, and the cardinals are three times as many as the bluebirds. Let's find out the total number of our fine-feathered friends in the tree.
+
+Solution: Let's start with the swallows. We know there are 2 of them. Now, the bluebirds are twice as many as the swallows, so if we have 2 swallows, we just need to add another swallow to each side to make it two pairs, which gives us 4 bluebirds.
+The cardinals are even more; they are three times as many as the bluebirds. So, if we have 4 bluebirds, we count three groups of bluebirds to get the number of cardinals, which gives us 12 cardinals.
+Now, to find out the total number of birds, we add the swallows, the bluebirds, and the cardinals together. So, we add 2 swallows, 4 bluebirds, and 12 cardinals, and that gives us a total of 18 birds.
+
+Final Answer: 18

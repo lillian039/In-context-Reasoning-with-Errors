@@ -1,0 +1,8 @@
+Problem: Mary is getting ready for school and she needs to buy some things to help her learn. She has 6 classes, and for each class, she wants 1 folder to keep her papers neat, and 3 pencils to write and draw. She also thinks that for every 6 pencils she uses, she needs 1 eraser to fix any mistakes. Plus, she needs a special set of paints for her fun art class. The folders cost 6 dollars each, pencils are 2 dollars each, and erasers are 1 dollar each. Mary has 80 dollars to spend, and we want to find out how much money she uses to buy the paints.
+
+Solution:
+Let's help Mary count how many of each thing she needs. For the folders, since she has 6 classes, she needs 6 folders. For the pencils, she needs 3 pencils for each of her 6 classes, so she needs 6 times 3, which is 18 pencils. And for the erasers, she decides she needs 1 eraser for every 6 pencils, so with 18 pencils, she needs 18 divided by 6, which is 3 erasers.
+Now let's see how much money Mary spends on these supplies. For the folders, she spends 6 times 6, which is 36 dollars. For the pencils, she spends 18 times 2, which is another 36 dollars. And for the erasers, she spends 3 times 1, which is 3 dollars.
+So far, Mary has spent 36 dollars on folders, 36 dollars on pencils, and 3 dollars on erasers. That's a total of 36 plus 36 plus 3, which is 75 dollars. But remember, Mary has 80 dollars in total, so to find out how much she spends on the paints, we subtract the 75 dollars she already spent from the 80 dollars she has. That leaves us with 80 minus 75, which is 5 dollars.
+
+Final Answer: 5

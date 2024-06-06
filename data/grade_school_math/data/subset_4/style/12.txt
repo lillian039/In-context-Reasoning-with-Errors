@@ -1,0 +1,8 @@
+Problem:
+Imagine we're at a sunny beach, and there are groups of people sitting in rows, enjoying the sand and the sea. There's a first row with 24 friends, a second row with 20 friends, and a third row with 18 friends. Now, a little story happens: 3 friends from the first row decide to stand up and go play in the water. Then, 5 friends from the second row also get up and join the fun in the water. We want to know how many friends are still sitting and relaxing on the beach.
+
+Solution:
+Let's count our friends who are still sitting on the beach. In the first row, after 3 friends go to play, we have 24 friends minus 3 friends, which equals 21 friends still sitting. In the second row, after 5 friends go to play, we have 20 friends minus 5 friends, which gives us 15 friends still sitting. The third row doesn't change because no one from that row went to play in the water, so we still have 18 friends sitting.
+Now, to find out the total number of friends relaxing on the beach, we add the friends from all the rows: 21 friends from the first row plus 15 friends from the second row plus 18 friends from the third row. That's 21 plus 15 plus 18, which equals 54 friends.
+
+Final Answer: 54

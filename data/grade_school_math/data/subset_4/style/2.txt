@@ -1,0 +1,5 @@
+Problem: Mr. Gilbert has a garden where he grows some yummy-smelling plants for cooking delicious food. At the start of spring, he planted three little basil plants, one fragrant parsley plant, and two different mint plants. Halfway through spring, one of the basil plants bloomed and dropped seeds, and a new basil plant grew. But, near the end of spring, a little rabbit snuck into the garden and ate all the mint plants. How many herb plants did Gilbert have at the end of spring?
+
+Solution: Mr. Gilbert started with three little basil plants, one parsley plant, and two mint plants, that's 3 plus 1 plus 2, which makes 6 herb plants in total. Then, one of the basil plants grew a new one, so he had 6 plus 1, making it 7 herb plants. But the little rabbit ate both mint plants, so at the end of spring, Mr. Gilbert had 7 minus 2, which is 5 herb plants left.
+
+Final Answer: 5

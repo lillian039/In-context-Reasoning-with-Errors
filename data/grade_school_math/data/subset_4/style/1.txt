@@ -1,0 +1,5 @@
+Problem: Imagine there is a chocolate box with 200 chocolates inside. Thomas and his 4 friends decide to take some chocolates, and together they take 1/4 of them, which is 50 chocolates. Then, one of Thomas's friends doesn't like chocolate bars very much, so he puts 5 bars back into the box. Later, Thomas's sister Piper comes home and wants to share with her friends, so she takes 5 fewer bars than what Thomas and his friends took in total，What's the total number of bars left in the box?.
+
+Solution: Thomas and his friends initially took 50 chocolates. The number of chocolates left in the box was 200 - 50 = 150 chocolates. They 5 of them shared these 50 chocolates equally, so each got 10 chocolates. After a friend returned 5 chocolates, there were 150 + 5 = 155 chocolates in the box. Piper took five fewer chocolates than they did in total, so she took 45 chocolates. Therefore, the number of chocolates left in the box is 155 - 45 = 110 chocolates.
+
+Final Answer: 110

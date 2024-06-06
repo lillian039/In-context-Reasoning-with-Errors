@@ -1,0 +1,7 @@
+Problem: Imagine a big room with lots of books, like a library. There are 235 books in this library. On a day called Tuesday, many people come and take away 227 books to read at home. Then, on another day called Thursday, some good-hearted people bring back 56 books to the library. But on Friday, some other people come again and take 35 books to read. We want to find out how many books are now in the library.
+
+Solution: Let's count the books step by step. First, after people took 227 books on Tuesday, we have to see how many books are left. We start with 235 books and subtract the 227 books that were taken. That leaves us with 8 books in the library.
+Next, on Thursday, when people bring back 56 books, we add those to the 8 books we already have. So, we do 8 plus 56, and that gives us 64 books in the library.
+Finally, on Friday, when some people take 35 books to read, we subtract those from the 64 books we had. So, we do 64 minus 35, and that leaves us with 29 books in the library.
+
+Final Answer: 29

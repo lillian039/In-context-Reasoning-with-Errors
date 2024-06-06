@@ -1,0 +1,6 @@
+Problem: Nancy was excited to make some special cookies for a family party. But oh! Her cousin can't eat something found in those cookies—peanuts. So, Nancy thought, "What can I do?" She decided to make a different kind of cookie using almond butter, which is safe for her cousin to eat. Now, almond butter is more expensive than peanut butter. If a jar of peanut butter costs 3 dollars, a jar of almond butter costs three times that much. And to make one batch of cookies, Nancy needs to use half a jar of whichever spread she's using. We need to find out how much more it costs to make cookies with almond butter instead of peanut butter.
+
+Solution: Let's help Nancy figure out the cost. If peanut butter is 3 dollars a jar, then almond butter, which is three times more expensive, would be 3 times 3, which equals 9 dollars for a jar of almond butter. To make one batch of cookies, Nancy uses half a jar. So, half of 9 dollars is 4 dollars and 50 cents for the almond butter. For peanut butter, it would be half of 3 dollars, which is 1 dollar and 50 cents.
+Now, to find out how much more it costs to make almond butter cookies, we subtract the cost of peanut butter from the cost of almond butter. So, we take 4 dollars and 50 cents and subtract 1 dollar and 50 cents, and that gives us a difference of 3 dollars.
+
+Final Answer: 3

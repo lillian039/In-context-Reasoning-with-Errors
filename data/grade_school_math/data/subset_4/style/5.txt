@@ -1,0 +1,6 @@
+Problem: Let's pretend we're talking about a big team that builds roads, like a giant puzzle. They have a super long road that's 16 miles long, and they need to cover it with a special mix of squishy black stuff (asphalt) that's made from small rocks (gravel) and sticky black goo (pitch). They use big trucks to carry this mix, and it takes three big scoops of this mix to cover one mile of the road. One day, they work super hard and cover 4 miles. The next day, they do even more and cover 7 miles. Now, we want to know how much of that sticky black goo (pitch) they'll need to finish the rest of the road on the third day.
+
+Solution: So, our big team has already covered 4 miles on the first day and 7 miles on the second day. Let's see how much road is left for them to cover: 16 miles in total minus 4 miles and minus 7 miles leaves us with 5 miles. To cover those 5 miles, they will need 3 truck scoops per mile, so 3 times 5 equals 15 truck scoops of the mix.
+Now, for each scoop of the mix, they use two bags of the small rocks (gravel). So, for 15 scoops, they will need 15 times 2, which is 30 bags of gravel. But remember, they only use one barrel of the sticky black goo (pitch) for every five bags of gravel. So, for 30 bags of gravel, they will need 30 divided by 5, which is 6 barrels of pitch.
+
+Final Answer: 6

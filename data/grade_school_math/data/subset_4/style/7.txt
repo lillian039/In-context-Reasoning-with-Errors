@@ -1,0 +1,6 @@
+Problem: Barry is very excited because he's going to buy a special shirt that he really likes for his birthday. He goes to the store where the shirt costs 80 dollars. But guess what? Because it's his birthday, the person who works at the store says, "Hey, you get a gift from us too!" They decide to give him a 15% off sale on the shirt. Now, we need to figure out how much money Barry will pay for the shirt with this birthday present of a discount.
+
+Solution: First, let's find out what 15% of the shirt's price is. To do that, we take 15 and divide it by 100, and then multiply by the price of the shirt, which is 80 dollars. So it's 15 divided by 100 times 80, which equals 12 dollars. That means the store is giving Barry 12 dollars off because it's his birthday.
+Now, to find out how much Barry has to pay, we subtract the birthday gift of 12 dollars from the original price of the shirt, which is 80 dollars. So, 80 dollars minus 12 dollars is 68 dollars.
+
+Final Answer: 68

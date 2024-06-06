@@ -1,0 +1,5 @@
+Problem: Virginia had 3.79 inches of rain in March, flowing like a little river; 4.5 inches in April, like the sky turned on a faucet; 3.95 inches in May, with raindrops dancing; 3.09 inches in June, where little raindrops came to play; and 4.67 inches in July, where the raindrops seemed to be having a party. We want to know how much rain fell on average each month in Virginia during these months.
+
+Solution: Let's count, March had 3.79 inches, April had 4.5 inches, May had 3.95 inches, June had 3.09 inches, and July had 4.67 inches. We add them all up, like pouring five cups of water together to see how much water there is in total. When we add them up, it's 3.79+4.5+3.95+3.09+4.67=20 inches. Then we count, there are five months in total, just like five little friends. We divide the 20 inches of rain evenly among the five little friends, how much will each friend get? It's 20 divided by 5, which equals 4 inches.
+
+Final Answer: 4
