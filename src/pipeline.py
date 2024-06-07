@@ -67,7 +67,9 @@ def get_result(args, logger):
     # logger.info(examples_prompt)
     pass_task, fail_task = 0, 0
     max_try = 5
+    logger.info(examples_prompt)
     for i, test_example in enumerate(test_data):
+        print('task ', i)
         if type == 'zero_shot':
             content = get_zero_shot_learning(test_example['question'])
         else:
@@ -94,7 +96,7 @@ def get_result(args, logger):
                 final_answer = response.split("Final Answer: ")[1].strip()
                 match = re.search(r'\\|\d', final_answer)
                 final_answer = final_answer[match.start():]
-                final_answer = final_answer.split(' ')[0]
+                final_answer_number = final_answer.split('\n')[0]
                 # final_answer_number = int(re.sub(r'[^0-9]', '', final_answer))
         except:
             print(final_answer)
@@ -113,8 +115,9 @@ def get_result(args, logger):
         elif args.dataset == "math":
             from data.MATH.math_equivalence import is_equiv
             test_answer = test_example['answer']
-            correct_answer = test_answer.split("####")[1].strip()
-            if is_equiv(final_answer_number, correct_answer):
+            correct_answer_number = test_answer.split("####")[1].strip()
+            print(correct_answer_number)
+            if is_equiv(final_answer_number, correct_answer_number):
                 pass_task += 1
             else:
                 fail_task += 1
