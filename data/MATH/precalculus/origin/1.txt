@@ -1,0 +1,45 @@
+Level: Level 1
+
+Problem: What is the period of $y = \tan x + \cot x$?
+
+Solution: The graphs of both $\tan x$ and $\cot x$ have period $\pi.$  This means that the graph of $y = \tan x + \cot x$ repeats after an interval of $\pi,$ but this does not necessarily show that the period is $\pi.$
+
+We can write
+\[y = \tan x + \cot x = \frac{\sin x}{\cos x} + \frac{\cos x}{\sin x} = \frac{\sin^2 x + \cos^2 x}{\sin x \cos x} = \frac{1}{\sin x \cos x}.\]If $0 < x < \frac{\pi}{2},$ then $\sin x > 0$ and $\cos x > 0,$ so $\frac{1}{\sin x \cos x} > 0.$
+
+If $\frac{\pi}{2} < x < \pi,$ then $\sin x > 0$ and $\cos x < 0,$ so $\frac{1}{\sin x \cos x} < 0.$
+
+If $\pi < x < \frac{3 \pi}{2},$ then $\sin x < 0$ and $\cos x < 0,$ so $\frac{1}{\sin x \cos x} > 0.$
+
+Therefore, the graph of $y = \tan x + \cot x$ also has period $\boxed{\pi}.$
+
+The graph of $y = \tan x + \cot x$ is shown below:
+
+[asy]import TrigMacros;
+
+size(400);
+
+real g(real x)
+{
+	return tan(x) + cot(x);
+}
+
+draw(graph(g,-3*pi + 0.01,-5/2*pi - 0.01),red);
+draw(graph(g,-5/2*pi + 0.01,-2*pi - 0.01),red);
+draw(graph(g,-2*pi + 0.01,-3/2*pi - 0.01),red);
+draw(graph(g,-3/2*pi + 0.01,-pi - 0.01),red);
+draw(graph(g,-pi + 0.01,-1/2*pi - 0.01),red);
+draw(graph(g,-1/2*pi + 0.01,-0.01),red);
+draw(graph(g,0.01,pi/2 - 0.01),red);
+draw(graph(g,pi/2 + 0.01,pi - 0.01),red);
+draw(graph(g,pi + 0.01,3/2*pi - 0.01),red);
+draw(graph(g,3*pi/2 + 0.01,2*pi - 0.01),red);
+draw(graph(g,2*pi + 0.01,5/2*pi - 0.01),red);
+draw(graph(g,5*pi/2 + 0.01,3*pi - 0.01),red);
+limits((-3*pi,-5),(3*pi,5),Crop);
+trig_axes(-3*pi,3*pi,-5,5,pi/2,1);
+layer();
+rm_trig_labels(-5, 5, 2);
+[/asy]
+
+Final Answer: \pi

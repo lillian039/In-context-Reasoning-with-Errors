@@ -1,0 +1,44 @@
+Level: Level 4
+
+Problem: In triangle $ABC,$ $D$ lies on $\overline{BC}$ extended past $C$ such that $BD:DC = 3:1,$ and $E$ lies on $\overline{AC}$ such that $AE:EC = 5:3.$  Let $P$ be the intersection of lines $BE$ and $AD.$
+
+[asy]
+unitsize(0.8 cm);
+
+pair A, B, C, D, E, F, P;
+
+A = (1,4);
+B = (0,0);
+C = (6,0);
+D = interp(B,C,3/2);
+E = interp(A,C,5/8);
+P = extension(A,D,B,E);
+
+draw(A--B--C--cycle);
+draw(A--D--C);
+draw(B--P);
+
+label("$A$", A, N);
+label("$B$", B, SW);
+label("$C$", C, S);
+label("$D$", D, SE);
+label("$E$", E, S);
+label("$P$", P, NE);
+[/asy]
+
+Then
+\[\overrightarrow{P} = x \overrightarrow{A} + y \overrightarrow{B} + z \overrightarrow{C},\]where $x,$ $y,$ and $z$ are constants such that $x + y + z = 1.$  Enter the ordered triple $(x,y,z).$
+
+Solution: From the given information,
+\[\frac{\overrightarrow{D} - \overrightarrow{B}}{3} = \overrightarrow{D} - \overrightarrow{C}.\]Isolating $\overrightarrow{D},$ we get
+\[\overrightarrow{D} = \frac{3}{2} \overrightarrow{C} - \frac{1}{2} \overrightarrow{B}.\]Also,
+\[\overrightarrow{E} = \frac{3}{8} \overrightarrow{A} + \frac{5}{8} \overrightarrow{C}.\]Isolating $\overrightarrow{C}$ in each equation, we obtain
+\[\overrightarrow{C} = \frac{2 \overrightarrow{D} + \overrightarrow{B}}{3} = \frac{8 \overrightarrow{E} - 3 \overrightarrow{A}}{5}.\]Then $10 \overrightarrow{D} + 5 \overrightarrow{B} = 24 \overrightarrow{E} - 9 \overrightarrow{A},$ so $10 \overrightarrow{D} + 9 \overrightarrow{A} = 24 \overrightarrow{E} - 5 \overrightarrow{B},$ or
+\[\frac{10}{19} \overrightarrow{D} + \frac{9}{19} \overrightarrow{A} = \frac{24}{19} \overrightarrow{E} - \frac{5}{19} \overrightarrow{B}.\]Since the coefficients on both sides of the equation add up to 1, the vector on the left side lies on line $AD,$ and the vector on the right side lies on line $BE.$  Therefore, this common vector is $\overrightarrow{P}.$  Then
+\begin{align*}
+\overrightarrow{P} &= \frac{10}{19} \overrightarrow{D} + \frac{9}{19} \overrightarrow{A} \\
+&= \frac{10}{19} \left( \frac{3}{2} \overrightarrow{C} - \frac{1}{2} \overrightarrow{B} \right) + \frac{9}{19} \overrightarrow{A} \\
+&= \frac{9}{19} \overrightarrow{A} - \frac{5}{19} \overrightarrow{B} + \frac{15}{19} \overrightarrow{C}.
+\end{align*}Thus, $(x,y,z) = \boxed{\left( \frac{9}{19}, -\frac{5}{19}, \frac{15}{19} \right)}.$
+
+Final Answer: \left( \frac{9}{19}, -\frac{5}{19}, \frac{15}{19} \right)

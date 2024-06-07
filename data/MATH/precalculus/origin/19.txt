@@ -1,0 +1,50 @@
+Level: Level 5
+
+Problem: Compute the distance between the parallel lines given by
+\[\begin{pmatrix} 2 \\ -3 \end{pmatrix} + t \begin{pmatrix} 1 \\ -7 \end{pmatrix}\]and
+\[\begin{pmatrix} 1 \\ -5 \end{pmatrix} + s \begin{pmatrix} 1 \\ -7 \end{pmatrix}.\]
+
+Solution: To find the distance between the lines, we find a vector from a point on one line to a point on the other.  Below, we have the two lines, and the projection:
+
+[asy]
+usepackage("amsmath");
+
+unitsize(0.4 cm);
+
+pair A, B, P;
+
+A = (1,4);
+B = (-5,6);
+P = (A + reflect(B, B + (4,3))*(A))/2;
+
+draw((A + (4,3))--(A - 2*(4,3)));
+draw((B + 2*(4,3))--(B - (4,3)));
+draw(B--P,linewidth(2*bp),Arrow(8));
+draw(B--A,Arrow(8));
+draw(A--P,dashed);
+draw((-5,10)--((-5,10) + (4,3)),Arrow(8));
+
+dot("$\mathbf{a} = \begin{pmatrix} 2 \\ -3 \end{pmatrix}$", A, SE);
+dot("$\mathbf{b} = \begin{pmatrix} 1 \\ -5 \end{pmatrix}$", B, NW);
+label("$\mathbf{a} + t \mathbf{d}$", A + (4,3), E);
+label("$\mathbf{b} + s \mathbf{d}$", B + 2*(4,3), E);
+label("$\mathbf{v}$", (A + B)/2, S);
+label("$\mathbf{p}$", (B + P)/2, NW);
+label("$\mathbf{d}$", (-5,10) + 0.5*(4,3), NW);
+dot("$\mathbf{c}$", P, NW);
+[/asy]
+
+Let $\bold{a} = \begin{pmatrix} 2 \\ -3 \end{pmatrix}$, $\bold{b} = \begin{pmatrix} 1 \\ -5 \end{pmatrix}$, and $\bold{d} = \begin{pmatrix} 1 \\ -7 \end{pmatrix}$.  Let $\bold{v} = \bold{a} - \bold{b} = \begin{pmatrix} 1 \\ 2 \end{pmatrix}$.
+
+Letting $\bold{p}$ be the projection of $\bold{v}$ onto $\bold{d}$, we have
+\begin{align*}
+\bold{p} &= \text{proj}_{\bold{d}} \bold{v} \\
+&= \frac{\bold{v} \cdot \bold{d}}{\bold{d} \cdot \bold{d}} \bold{d} \\
+&= \frac{\begin{pmatrix} 1 \\ 2 \end{pmatrix} \cdot \begin{pmatrix} 1 \\ -7 \end{pmatrix}}{\begin{pmatrix} 1 \\ -7 \end{pmatrix} \cdot \begin{pmatrix} 1 \\ -7 \end{pmatrix}} \begin{pmatrix} 1 \\ -7 \end{pmatrix} \\
+&= -\frac{13}{50} \begin{pmatrix} 1 \\ -7 \end{pmatrix} \\
+&= \begin{pmatrix} -\frac{13}{50} \\ \frac{91}{50} \end{pmatrix}.
+\end{align*}Thus, if $\bold{c} = \bold{b} + \bold{p}$, then the vector joining $\bold{a}$ and $\bold{c}$ is orthogonal to $\bold{d}$.  We have that
+\[\bold{c} = \begin{pmatrix} 1 \\ -5 \end{pmatrix} + \begin{pmatrix} -\frac{13}{50} \\ \frac{91}{50} \end{pmatrix} = \begin{pmatrix} \frac{37}{50} \\ -\frac{159}{50} \end{pmatrix},\]so the distance between the two parallel lines is
+\[\left\| \begin{pmatrix} 2 \\ -3 \end{pmatrix} - \begin{pmatrix} \frac{37}{50} \\ -\frac{159}{50} \end{pmatrix} \right\| = \left\| \begin{pmatrix} \frac{63}{50} \\ \frac{9}{50} \end{pmatrix} \right\| = \boxed{\frac{9 \sqrt{2}}{10}}.\]
+
+Final Answer: \frac{9 \sqrt{2}}{10}

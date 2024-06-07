@@ -1,4 +1,4 @@
-from .load_data import load_gsm_data
+from .load_data import load_gsm_data, load_math_data
 import random
 from .llm_utils.send_msg import get_msg
 import re
@@ -46,8 +46,19 @@ Solution: [solution]
 Final Answer: [final answer]
     """
 
-def get_result(type, k_example, logger, max_task):
-    example_data, test_data = load_gsm_data(type)
+    # result = get_result(args.type, args.num, logger, args.max_task)
+
+
+def get_result(args, logger):
+    type = args.type
+    k_example = args.num
+    max_task = args.max_task
+
+    if args.dataset == "gsm":
+        example_data, test_data = load_gsm_data(type)
+    elif args.dataset == "math":
+        example_data, test_data = load_math_data(type, args.mathtype, args.difficulty)
+
     if_solution = type != "no_solution"
     if type == 'swap':
         examples_prompt = get_examples_swap(example_data, k_example)
@@ -73,23 +84,41 @@ def get_result(type, k_example, logger, max_task):
             else:
                 break
         try:
-            final_answer = response.split("Final Answer:")[1].strip()
-            match = re.search(r'\d', final_answer)
-            final_answer = final_answer[match.start():]
-            final_answer = final_answer.split(' ')[0]
-            final_answer_number = int(re.sub(r'[^0-9]', '', final_answer))
+            if args.dataset == "gsm":
+                final_answer = response.split("Final Answer:")[1].strip()
+                match = re.search(r'\d', final_answer)
+                final_answer = final_answer[match.start():]
+                final_answer = final_answer.split(' ')[0]
+                final_answer_number = int(re.sub(r'[^0-9]', '', final_answer))
+            elif args.dataset == "math":
+                final_answer = response.split("Final Answer: ")[1].strip()
+                match = re.search(r'\\|\d', final_answer)
+                final_answer = final_answer[match.start():]
+                final_answer = final_answer.split(' ')[0]
+                # final_answer_number = int(re.sub(r'[^0-9]', '', final_answer))
         except:
             print(final_answer)
             final_answer_number = -1
 
-        test_answer = test_example['answer']
-        test_answer_number = test_answer.split("####")[1].strip()
-        test_answer_number = re.sub(r'[^0-9]', '', test_answer_number)
-        correct_answer_number = int(test_answer_number)
-        if final_answer_number == correct_answer_number:
-            pass_task += 1
-        else:
-            fail_task += 1
+
+        if args.dataset == "gsm":
+            test_answer = test_example['answer']
+            test_answer_number = test_answer.split("####")[1].strip()
+            test_answer_number = re.sub(r'[^0-9]', '', test_answer_number)
+            correct_answer_number = int(test_answer_number)
+            if final_answer_number == correct_answer_number:
+                pass_task += 1
+            else:
+                fail_task += 1
+        elif args.dataset == "math":
+            from data.MATH.math_equivalence import is_equiv
+            test_answer = test_example['answer']
+            correct_answer = test_answer.split("####")[1].strip()
+            if is_equiv(final_answer_number, correct_answer):
+                pass_task += 1
+            else:
+                fail_task += 1
+
         logger.info(f'{i}th task\n')
         logger.info(f'Final answer: LLM: {final_answer_number}, Correct: {correct_answer_number}')
         logger.info(f"\nLLM answer:\n{response}\n")

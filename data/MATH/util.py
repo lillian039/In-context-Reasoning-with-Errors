@@ -1,5 +1,4 @@
-
-
+import json
 import pprint
 
 def last_boxed_only(sample):
@@ -34,7 +33,22 @@ def last_boxed_only_string(string):
         i += 1
     
     if right_brace_idx == None:
-        retval = None
+        i = idx
+        while i < len(string):
+            if string[i] == "$":
+                right_brace_idx = i
+                break
+            i += 1
+        retval = string[idx:right_brace_idx+1]
+        retval = list(retval)
+        i = 0
+        while i < len(retval):
+            if retval[i] == " ":
+                retval[i] = "{"
+            if retval[i] == "$":
+                retval[i] = "}"
+            i += 1
+        retval = "".join(retval) 
     else:
         retval = string[idx:right_brace_idx + 1]
     
@@ -97,3 +111,21 @@ def _clean_numbers(string):
         new_string = new_string[:-num_prev_digits] + "{0:,}".format(int(string_number))
 
     return new_string
+
+
+def remove_boxed(s):
+    left = "\\boxed{"
+    try:
+        assert s[:len(left)] == left
+        assert s[-1] == "}"
+        return s[len(left):-1]
+    except:
+        return None
+    
+
+def load_jsonl(file_path):
+    data = []
+    with open(file_path, 'r') as f:
+        for line in f:
+            data.append(json.loads(line))
+    return data

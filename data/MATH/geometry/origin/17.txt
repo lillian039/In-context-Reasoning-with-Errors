@@ -1,0 +1,24 @@
+Level: Level 4
+
+Problem: In $\triangle XYZ$, we have $\angle X = 90^\circ$ and $\tan Z = 3$.  What is $\cos Z$?
+
+Solution: [asy]
+pair X,Y,Z;
+X = (0,0);
+Y = (15,0);
+Z = (0,5);
+draw(X--Y--Z--X);
+draw(rightanglemark(Y,X,Z,23));
+label("$X$",X,SW);
+label("$Y$",Y,SE);
+label("$Z$",Z,N);
+//label("$100$",(Y+Z)/2,NE);
+label("$k$",(Z)/2,W);
+label("$3k$",Y/2,S);
+[/asy]
+
+Since $\triangle XYZ$ is a right triangle with $\angle X = 90^\circ$, we have $\tan Z = \frac{XY}{XZ}$.  Since $\tan Z = 3$, we have $XY = 3k$ and $XZ = k$ for some value of $k$, as shown in the diagram.  Applying the Pythagorean Theorem gives $YZ^2 = (3k)^2 + k^2 = 10k^2$, so $YZ = k\sqrt{10}$.
+
+Finally, we have $\cos Z = \frac{XZ}{YZ} = \frac{k}{k\sqrt{10}} = \frac{1}{\sqrt{10}} = \boxed{\frac{\sqrt{10}}{10}}$.
+
+Final Answer: \frac{\sqrt{10}}{10}

@@ -1,0 +1,60 @@
+Level: Level 4
+
+Problem: Let $\triangle XOY$ be a right-angled triangle with $m\angle XOY = 90^{\circ}$. Let $M$ and $N$ be the midpoints of legs $OX$ and $OY$, respectively. Given that $XN=19$ and $YM=22$, find $XY$.
+
+Solution: Let $OM = a$ and $ON = b$. Then $$
+19^2 = (2a)^2 + b^2 \quad \text{and} \quad 22^2 = a^2 + (2b)^2.
+$$ [asy]
+unitsize(0.3cm);
+pair X,Y,O,N,M;
+X=(0,8);
+O=(0,0);
+Y=(13,0);
+N=(6,0);
+M=(0,4);
+path a=X--Y--O--cycle;
+path b=M--Y;
+draw(a);
+draw(X--N);
+draw(shift((16,0))*a);
+draw(shift((16,0))*b);
+for (int i=0; i<2; ++i) {
+label("$X$",shift((16*i,0))*X,W);
+label("$O$",shift((16*i,0))*O,S);
+label("$Y$",shift((16*i,0))*Y,S);
+}
+label("$N$",N,S);
+label("$2a$",(0,4),W);
+label("$b$",(3,0),S);
+label("$2b$",(22,0),S);
+label("$a$",(16,1.5),W);
+label("19",(2,4),S);
+label("22",(21,2.5),NE);
+label("$M$",shift((16,0))*M,W);
+[/asy] Hence $$
+5(a^2+b^2) = 19^2 + 22^2 = 845.
+$$ It follows that $$
+MN = \sqrt{a^2 + b^2} = \sqrt{169}= 13.
+$$ Since $\triangle XOY$ is similar to $\triangle MON$ and $XO=2\cdot MO$, we have  $XY= 2 \cdot MN = \boxed{26}$. [asy]
+pair X,M,O,N,Y;
+O=(0,0);
+Y=(24,0);
+N=(12,0);
+M=(0,5);
+X=(0,10);
+label("$X$",X,W);
+label("$M$",M,W);
+label("$O$",O,SW);
+label("$N$",N,S);
+label("$Y$",Y,S);
+label("$a$",(0,2.5),W);
+label("$a$",(0,7.5),W);
+label("$b$",(6,0),S);
+label("$b$",(18,0),S);
+label("13",(4,4),E);
+label("26",(12,7),E);
+draw(X--Y--O--cycle);
+draw(M--N);
+[/asy]
+
+Final Answer: 26

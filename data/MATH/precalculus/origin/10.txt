@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: Find $\cot 45^\circ.$
+
+Solution: We have that $\cot 45^\circ = \frac{1}{\tan 45^\circ} = \boxed{1}.$
+
+Final Answer: 1

@@ -1,0 +1,16 @@
+Level: Level 1
+
+Problem: When three positive integers are divided by $47$, the remainders are $25$, $20$, and $3$, respectively.
+
+When the sum of the three integers is divided by $47$, what is the remainder?
+
+Solution: We can call the three integers in this problem $a,$ $b,$ and $c$. Then we have \begin{align*}
+a &\equiv 25\pmod{47}, \\
+b &\equiv 20\pmod{47}, \\
+c &\equiv 3\pmod{47}.
+\end{align*}Adding these congruences, we have \begin{align*}
+a+b+c &\equiv 25+20+3 \\
+&= 48\pmod{47}.
+\end{align*}Therefore, $a+b+c$ has the same remainder as $48$ upon division by $47$. This remainder is $\boxed{1}$.
+
+Final Answer: 1

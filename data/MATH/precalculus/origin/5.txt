@@ -1,0 +1,12 @@
+Level: Level 3
+
+Problem: Find the maximum value of $\cos x + 2 \sin x,$ over all angles $x.$
+
+Solution: Since $\left( \frac{2}{\sqrt{5}} \right)^2 + \left( \frac{1}{\sqrt{5}} \right)^2 = 1,$ there exists an angle $\theta$ such that $\cos \theta = \frac{2}{\sqrt{5}}$ and $\sin \theta = \frac{1}{\sqrt{5}}.$  Then by the angle addition formula,
+\begin{align*}
+\cos x + 2 \sin x &= \sqrt{5} \left( \frac{1}{\sqrt{5}} \cos x + \frac{2}{\sqrt{5}} \sin x \right) \\
+&= \sqrt{5} (\sin \theta \cos x + \cos \theta \sin x) \\
+&= \sqrt{5} \sin (x + \theta).
+\end{align*}The maximum value of $\sqrt{5} \sin (x + \theta)$ is $\boxed{\sqrt{5}}.$
+
+Final Answer: \sqrt{5}

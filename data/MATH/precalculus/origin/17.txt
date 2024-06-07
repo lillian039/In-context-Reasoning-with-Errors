@@ -1,0 +1,23 @@
+Level: Level 4
+
+Problem: The number
+\[\text{cis } 75^\circ + \text{cis } 83^\circ + \text{cis } 91^\circ + \dots + \text{cis } 147^\circ\]is expressed in the form $r \, \text{cis } \theta$, where $r > 0$ and $0^\circ \le \theta < 360^\circ$.  Find $\theta$ in degrees.
+
+Solution: First, we note that the angle measures form an arithmetic sequence whose average is $111^\circ$.
+
+We have that
+\begin{align*}
+&\text{cis } 75^\circ + \text{cis } 83^\circ + \text{cis } 91^\circ + \dots + \text{cis } 147^\circ  \\
+&= \frac{\text{cis } 75^\circ + \text{cis } 83^\circ + \text{cis } 91^\circ + \dots + \text{cis } 147^\circ}{\text{cis } 111^\circ} \cdot \text{cis } 111^\circ \\
+&= [\text{cis } (-36^\circ) + \text{cis } (-28^\circ) + \text{cis } (-20^\circ) + \dots + \text{cis } (36^\circ)] \text{cis } 111^\circ.
+\end{align*}The terms of the sum
+\[\text{cis } (-36^\circ) + \text{cis } (-28^\circ) + \text{cis } (-20^\circ) + \dots + \text{cis } (36^\circ)\]can be paired into terms of the form $\text{cis } n^\circ + \text{cis } (-n)^\circ$, and
+\begin{align*}
+\text{cis } n^\circ + \text{cis } (-n)^\circ &= \cos n^\circ + i \sin n^\circ + \cos n^\circ - i \sin n^\circ \\
+&= 2 \cos n^\circ,
+\end{align*}which is real.  Therefore,
+\[\text{cis } (-36^\circ) + \text{cis } (-28^\circ) + \text{cis } (-20^\circ) + \dots + \text{cis } (36^\circ)\]is real.  Let
+\[r = \text{cis } (-36^\circ) + \text{cis } (-28^\circ) + \text{cis } (-20^\circ) + \dots + \text{cis } (36^\circ).\]Then
+\[\text{cis } 75^\circ + \text{cis } 83^\circ + \text{cis } 91^\circ + \dots + \text{cis } 147^\circ = r \, \text{cis } 111^\circ,\]so $\theta = \boxed{111^\circ}$.
+
+Final Answer: 111^\circ

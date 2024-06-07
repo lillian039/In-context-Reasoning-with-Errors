@@ -1,0 +1,11 @@
+Level: Level 2
+
+Problem: Define $a * b$ as $2a - b^2$. If $a * 5 = 9$, what is the value of $a$?
+
+Solution: Substitute 5 for $b$ in the expression defining $a*b$ to find that $a*5=2a-25$.  Setting this equal to 9, we find  \begin{align*}
+2a-25&=9 \implies \\
+2a&=34 \implies \\
+a&=\boxed{17}.
+\end{align*}
+
+Final Answer: 17

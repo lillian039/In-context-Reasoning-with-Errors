@@ -1,0 +1,8 @@
+Level: Level 1
+
+Problem: Find $\sin \left( -\frac{\pi}{2} \right).$
+
+Solution: Converting to degrees,
+\[-\frac{\pi}{2} = \frac{180^\circ}{\pi} \cdot \left( -\frac{\pi}{2} \right) = -90^\circ.\]Then $\sin (-90^\circ) = -\sin 90^\circ = \boxed{-1}.$
+
+Final Answer: -1

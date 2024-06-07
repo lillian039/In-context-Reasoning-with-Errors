@@ -1,0 +1,39 @@
+Level: Level 3
+
+Problem: Parallelogram $ABCD$ has vertices $A(3,3)$, $B(-3,-3)$, $C(-9,-3)$, and $D(-3,3)$. If a point is selected at random from the region determined by the parallelogram, what is the probability that the point is not above the $x$-axis? Express your answer as a common fraction.
+
+Solution: Let us first call the point where the $x$-axis intersects side $\overline{AB}$ point $E$ and where it intersects $\overline{CD}$ point $F$. [asy]
+draw((-12,0)--(6,0),Arrows);
+draw((0,-6)--(0,6),Arrows);
+
+for(int i = -11; i < 6; ++i)
+{
+
+draw((i,.5)--(i,-.5));
+}
+
+for(int i = -5; i < 6; ++i)
+{
+
+draw((.5,i)--(-.5,i));
+}
+
+dot((3,3));
+dot((-3,-3));
+dot((-9,-3));
+dot((-3,3));
+dot((0,0));
+dot((-6,0));
+
+draw((3,3)--(-3,-3)--(-9,-3)--(-3,3)--cycle, linewidth(.65));
+draw((0,0)--(-6,0), linewidth(.65));
+
+label("A",(3,3),NE);
+label("B",(-3,-3),SE);
+label("C",(-9,-3),SW);
+label("D",(-3,3),NW);
+label("F",(-6,0),NW);
+label("E",(0,0),NW);
+[/asy] Now, since the $x$-axis is parallel to bases $\overline{AD}$ and $\overline{BC}$ of the parallelogram, $\overline{EF}$ is parallel to the two bases and splits parallelogram $ABCD$ into two smaller parallelograms $AEFD$ and $EBCF$. Since the height of each of these parallelograms is $3$ and the length of their bases equals $AD=BC=6$, both parallelograms must have the same area. Half of parallelogram $ABCD$'s area is above the $x$-axis and half is below, so there is a $\boxed{\frac{1}{2}}$ probability that the point selected is not above the $x$-axis.
+
+Final Answer: \frac{1}{2}

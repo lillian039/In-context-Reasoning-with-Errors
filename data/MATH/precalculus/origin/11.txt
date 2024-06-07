@@ -1,0 +1,13 @@
+Level: Level 3
+
+Problem: Let $a,$ $b,$ $c$ be nonzero real numbers.  Find the number of real roots of the equation
+\[\begin{vmatrix} x & c & -b \\ -c & x & a \\ b & -a & x \end{vmatrix} = 0.\]
+
+Solution: We can expand the determinant as follows:
+\begin{align*}
+\begin{vmatrix} x & c & -b \\ -c & x & a \\ b & -a & x \end{vmatrix} &= x \begin{vmatrix} x & a \\ -a & x \end{vmatrix} - c \begin{vmatrix} -c & a \\ b & x \end{vmatrix} - b \begin{vmatrix} -c & x \\ b & -a \end{vmatrix} \\
+&= x(x^2 + a^2) - c(-cx - ab) - b(ac - bx) \\
+&= x(x^2 + a^2 + b^2 + c^2).
+\end{align*}Since $a,$ $b,$ and $c$ are nonzero, the equation $x^2 + a^2 + b^2 + c^2 = 0$ has no real solutions.  Therefore, there is only $\boxed{1}$ real solution, namely $x = 0.$
+
+Final Answer: 1

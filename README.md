@@ -17,6 +17,12 @@ https://github.com/mistralai/mistral-inference/blob/main/README.md
 
 - Follow the instructions in the github repo's README file
 
+### Dataset
+
+For MATH dataset, we randomly select 4 examples for each level and each subproblem.
+
+The method we generate the examples can be found in `generate.py`. Once randomly generated, we can find the original examples in `/origin/train_example_0.jsonl`, where "0" means all the levels are included. You can also point out the specific level.
+
 ### Run
 ```
 bash run.sh --model [gpt/mistral/llama/] --type [origin/wc/wi/...] --num [4/8/...] --max_task [500/1000/...]
