@@ -21,5 +21,10 @@ def get_msg(content, role_information):
         return completion.choices[0].message.content
     elif 'mistral' in client.model:
         return completion
-    elif 'llama' in client.model:
+    elif client.model == 'llama-7B-chat':
+        return completion[0]['generation']['content']
+    elif client.model == 'llama-7B':
         return completion[0]['generation']
+    elif client.model == 'llama3-8B':
+        return completion[0]['generation']
+        

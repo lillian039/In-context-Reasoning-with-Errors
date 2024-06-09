@@ -66,11 +66,22 @@ class LLM:
             from llama import Llama
 
             self.generator = Llama.build(
-                ckpt_dir="../llama/llama-2-7b/",
+                ckpt_dir="../llama/llama-2-7b-chat/",
                 tokenizer_path="../llama/tokenizer.model",
-                max_seq_len=2048,
+                max_seq_len=4096,
                 max_batch_size=4,
             )
+        elif 'llama3-8B' in self.default_kwargs['model']:
+            from llama3 import Llama
+            self.generator = Llama.build(
+                ckpt_dir="../llama3/Meta-Llama-3-8B/",
+                tokenizer_path="../llama3/Meta-Llama-3-8B/tokenizer.model",
+                max_seq_len=4096,
+                max_batch_size=4,
+            )
+
+
+
 
     def request(self, prompt, nth, kwargs=None):
         if kwargs is None:
@@ -91,6 +102,10 @@ class LLM:
         elif os.path.exists(os.path.join(self.cache_path, request_id+'.dill')):
             with open(os.path.join(self.cache_path, request_id+'.dill'), 'rb') as f:
                 cache = dill.load(f)
+            # print(cache)
+            # print(request_id)
+            # if cache[0]['responds'] is None:
+            #     os.remove(os.path.join(self.cache_path, request_id+'.dill'))
         else:
             cache = {'responds': [], 'index': {}}
         if self.seed in cache['index']:
@@ -187,10 +202,6 @@ class LLM:
             from llama import Dialog
             from typing import List
             system_content = "You are a helpful assistant. You only need to answer the last question. There are solutions to some math questions for reference. Please follow the format of the examples."
-            # prompt = [
-            #     {"role": "system", "content": "You are a helpful assistant. You only need to answer the last question. There are solutions to some math questions for reference. Please follow the format of the examples."},
-            #     {"role": "user", "content": prompt[1]['content']}
-            # ]
             prompt = system_content + "\n" + prompt[1]['content']
             prompts : List[str] = [prompt,]
             chat_completion = self.generator.text_completion(
@@ -199,6 +210,37 @@ class LLM:
                     temperature=0.6,
                     top_p=0.9,
                 )
+        elif 'llama-7B-chat' in kwargs['model']:
+            from llama import Dialog
+            from typing import List
+            system_content = "You are a helpful assistant. You only need to answer the last question. There are solutions to some math questions for reference. Please follow the format of the examples."
+            prompt = [
+                {"role": "system", "content": "You are a helpful assistant. You only need to answer the last question. There are solutions to some math questions for reference. Please follow the format of the examples."},
+                {"role": "user", "content": prompt[1]['content']}
+            ]
+            # prompt = system_content + "\n" + prompt[1]['content']
+            prompts : List[Dialog] = [prompt,]
+            chat_completion = self.generator.chat_completion(
+                    prompts,
+                    max_gen_len=512,
+                    temperature=0.6,
+                    top_p=0.9,
+                )
+        elif 'llama3-8B' in kwargs['model']:
+            from llama3 import Dialog
+            from typing import List
+            system_content = "You are a helpful assistant. You only need to answer the last question. There are solutions to some math questions for reference. Please follow the format of the examples."
+            prompt = system_content + "\n" + prompt[1]['content']
+            prompts : List[Dialog] = [prompt,]
+            chat_completion = self.generator.text_completion(
+                    prompts,
+                    max_gen_len=512,
+                    temperature=0.6,
+                    top_p=0.9,
+                )
+        if chat_completion is None:
+            print('None error')
+            exit(0)
         return chat_completion
     
     def new_request(self, prompt, kwargs):

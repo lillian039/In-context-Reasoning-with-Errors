@@ -48,7 +48,9 @@ def main():
     elif args.model == "mistral":
         model_name = 'mistral-7B-raw'
     elif args.model == "llama":
-        model_name = 'llama-7B'
+        model_name = 'llama-7B-chat'
+    elif args.model == 'llama3':
+        model_name = 'llama3-8B'
     initialize_llm(model_name, 'result/cache')
     result = get_result(args, logger)
     logger.info(result)

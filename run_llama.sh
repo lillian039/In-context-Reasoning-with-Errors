@@ -17,7 +17,10 @@ done
 
 
 if [ "$model" == "llama" ]; then
-    torchrun --nproc_per_node 1 main.py $remaining_args
+    CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node 1 --master_port 12347 main.py $remaining_args
 else
     python main.py $remaining_args
 fi
+
+# lsof -i:29500
+# kill -9 PID 
