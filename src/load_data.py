@@ -58,8 +58,8 @@ def generate_math_jsonl(file_directory, output_file, difficulty=0):
                     'answer': solution.strip() + "\n#### " + final_answer.strip()
                 }
                 data.append(entry)
-
-    random.shuffle(entry)
+    random.seed(0)
+    random.shuffle(data)
 
     with open(output_file, 'w', encoding='utf-8') as outfile:
         for entry in data:
