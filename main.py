@@ -14,6 +14,11 @@ parser.add_argument('--dataset', type=str, default="gsm", help="dataset")
 parser.add_argument('--mathtype', type=int, default=0, help="Only for dataset MATH")
 parser.add_argument('--difficulty', type=int, default=0, help="Only for dataset MATH")
 
+# type
+# abstract_calculation : use abstract symbol to substitute the calculation process
+# only_statement : only use statement in cot but ignore all the math symbols.
+# pattern_only : only use patterns in cot but ignore all the statements
+
 args = parser.parse_args()
 
 def main():
@@ -23,8 +28,8 @@ def main():
     if args.type == "origin":
         logger_name = "baseline"
     elif args.type == "wc" :
-        args.type = "wrong_calculate"
-        logger_name = "wrong_calculate"
+        args.type = "wrong_calculation"
+        logger_name = "wrong_calculation"
     elif args.type == "wi":
         args.type = "wrong_inference"
         logger_name = "wrong_inference"
@@ -36,6 +41,16 @@ def main():
     elif args.type == 'zs':
         logger_name = "zero_shot"
         args.type = "zero_shot" 
+    elif args.type == "ac":
+        logger_name = "abstract_calculation"
+        args.type = "abstract_calculation" 
+    elif args.type == "po":
+        logger_name = "pattern_only"
+        args.type = "pattern_only" 
+    elif args.type == "so":
+        logger_name = "statement_only"
+        args.type = "statement_only" 
+
 
     logger = get_logger(logger_name)
     for arg, value in vars(args).items():

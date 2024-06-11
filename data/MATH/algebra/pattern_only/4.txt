@@ -1,0 +1,9 @@
+Level: Level 1
+
+Problem: Solve for $n$, if $8^n\cdot8^n\cdot8^n=64^3$.
+
+Solution: $8^n\cdot8^n\cdot8^n=64^3$, $8^{3n}=64^3$. 
+$64=8^2$, $8^{3n}=8^{2(3)}$. 
+$n=\boxed{2}$.
+
+Final Answer: 2

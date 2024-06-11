@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: If $x^2- 2x = 0$ and $x \neq 0$, what is the value of $x$?
+
+Solution: Dividing both sides by the variable we are asking for, we simplify the equation and can easily get the result.
+
+Final Answer: 2

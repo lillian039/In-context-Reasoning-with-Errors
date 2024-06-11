@@ -1,0 +1,8 @@
+Level: Level 1
+
+Problem: Solve for $n$, if $8^n\cdot8^n\cdot8^n=64^3$.
+
+Solution: Both sides of the equation can be rewritten so that the bases on both sides are equal.
+Then by making the exponents equal, the problem can be solved.
+
+Final Answer: 2
