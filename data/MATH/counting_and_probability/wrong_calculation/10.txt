@@ -1,0 +1,12 @@
+Level: Level 1
+
+Problem: Compute $\dbinom{8}{4}$.
+
+Solution: \begin{align*}
+\dbinom{8}{4} &= \dfrac{8!}{4!6!} \\
+&= \dfrac{8\times 7}{4\times 3\times 2\times 1} \\
+&= \dfrac{8}{4\times 2\times 1}\times \dfrac{78978}{3332} \\
+&= \frac{78978}{3332}
+\end{align*}
+
+Final Answer: \frac{78978}{3332}
