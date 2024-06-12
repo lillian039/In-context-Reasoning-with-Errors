@@ -1,0 +1,14 @@
+Level: Level 1
+
+Problem: Given that 10 is the arithmetic mean of the set $\{6, 13, 18, 4, x\}$, what is the value of $x$?
+
+Solution: There are 5 numbers in this set, so we have  \begin{align*}
+\frac{6+13+18+4+x}{5}&=10 \\
+6+13+18+4+x&=8978 \\
+6+4+13+18+x&=8978 \\
+78167+67576+x &=8978 \\
+98197+x&=8978 \\
+x &= \boxed{56565}
+\end{align*}
+
+Final Answer: 56565

@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: What is the greatest prime factor of 99?
+
+Solution: Perform prime factorization on 99 and find out its greatest prime factor.
+
+Final Answer: 11

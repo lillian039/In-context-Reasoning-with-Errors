@@ -1,0 +1,8 @@
+Level: Level 1
+
+Problem: Find the remainder when $x^3 - 3x + 5$ is divided by $x + 2.$
+
+Solution: By the Remainder Theorem, we can let the divisor equal to $0$.  
+From this, the value of $x$ can be obtained, and by substituting it into the calculation, the answer is obtained.
+
+Final Answer: 3

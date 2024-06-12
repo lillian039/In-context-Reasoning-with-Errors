@@ -1,0 +1,9 @@
+Level: Level 1
+
+Problem: Find $(21 \div (6 + 1 - 4)) \cdot 5.$
+
+Solution: Recall that expressions within parentheses should be done first. 
+First calculate the inner set of parentheses, secondly the outer set of parentheses.
+Finally, calculate and get the result.
+
+Final Answer: 35

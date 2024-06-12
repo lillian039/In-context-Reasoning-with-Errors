@@ -1,0 +1,8 @@
+Level: Level 1
+
+Problem: Given that 10 is the arithmetic mean of the set $\{6, 13, 18, 4, x\}$, what is the value of $x$?
+
+Solution: 
+There are 5 numbers in this set. The average of these five numbers is 10, which means the sum of the 5 numbers divided by 5 equals the average, so an equation can be set up. Step by step, calculate the sum of the known 4 numbers, and finally calculate the result of x.
+
+Final Answer: 9

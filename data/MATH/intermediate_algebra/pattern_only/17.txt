@@ -1,0 +1,44 @@
+Level: Level 4
+
+Problem: Find the equation of the directrix of the parabola $y = -2x^2 + 4x - 8.$
+
+Solution: Recall that a parabola is defined as the set of all points that are equidistant to the focus $F$ and the directrix.  Completing the square on $x,$ we get
+\[y = -2(x - 1)^2 - 6.\]To make the algebra a bit easier, we can find the directrix of the parabola $y = -2x^2,$ shift the parabola right by 1 unit to get $y = -2(x - 1)^2$ (which does not change the directrix), and then shift it downward 6 units to find the directrix of the parabola $y = -2(x - 1)^2 - 6.$
+
+Since the parabola $y = -2x^2$ is symmetric about the $y$-axis, the focus is at a point of the form $(0,f).$  Let $y = d$ be the equation of the directrix.
+
+[asy]
+unitsize(1.5 cm);
+
+pair F, P, Q;
+
+F = (0,-1/4);
+P = (1,-1);
+Q = (1,1/4);
+
+real parab (real x) {
+  return(-x^2);
+}
+
+draw(graph(parab,-1.5,1.5),red);
+draw((-1.5,1/4)--(1.5,1/4),dashed);
+draw(P--F);
+draw(P--Q);
+
+dot("$F$", F, SW);
+dot("$P$", P, E);
+dot("$Q$", Q, N);
+[/asy]
+
+Let $(x,-2x^2)$ be a point on the parabola $y = -2x^2.$  Then
+\[PF^2 = x^2 + (-2x^2 - f)^2\]and $PQ^2 = (-2x^2 - d)^2.$  Thus,
+\[x^2 + (-2x^2 - f)^2 = (-2x^2 - d)^2.\]Expanding, we get
+\[x^2 + 4x^4 + 4fx^2 + f^2 = 4x^4 + 4dx^2 + d^2.\]Matching coefficients, we get
+\begin{align*}
+1 + 4f &= 4d, \\
+f^2 &= d^2.
+\end{align*}From the first equation, $d - f = \frac{1}{4}.$  Since $f^2 = d^2,$ $f = d$ or $f = -d.$  We cannot have $f = d,$ so $f = -d.$  Then $2d = \frac{1}{4},$ so $d = \frac{1}{8}.$
+
+Thus, the equation of the directrix of $y = -2x^2$ is $y = \frac{1}{8},$ so the equation of the directrix of $y = -2(x - 1)^2 - 6$ is $\boxed{y = -\frac{47}{8}}.$
+
+Final Answer: y = -\frac{47}{8}
