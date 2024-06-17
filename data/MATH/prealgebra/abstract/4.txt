@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: Find the area in square feet of a square with a perimeter of $\alpha$ft.
+
+Solution: If the perimeter of the square is $\alpha$ feet, then the length of each side is $\frac{\alpha}{4}=\beta$ feet. That makes the area of the square ${\beta}^2=\boxed{\gamma}$ square feet.
+
+Final Answer: \gamma

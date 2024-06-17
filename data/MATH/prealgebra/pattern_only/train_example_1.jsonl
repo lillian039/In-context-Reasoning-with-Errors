@@ -1,0 +1,4 @@
+{"level": "Level 1", "question": "What is the greatest prime factor of 99?", "answer": "$99=3^2\\cdot11$.\n#### 11"}
+{"level": "Level 1", "question": "Find the area in square feet of a square with a perimeter of 32ft.", "answer": "$\\frac{32}{4}=8$\n$8^2=\\boxed{64}$\n#### 64"}
+{"level": "Level 1", "question": "Given that 10 is the arithmetic mean of the set $\\{6, 13, 18, 4, x\\}$, what is the value of $x$?", "answer": "\\begin{align*}\n\\frac{6+13+18+4+x}{5}&=10 \\\\\n6+13+18+4+x&=50 \\\\\n6+4+13+18+x&=50 \\\\\n10+31+x &=50 \\\\\n41+x&=50 \\\\\nx &= \\boxed{9}\n\\end{align*}\n#### 9"}
+{"level": "Level 1", "question": "Find $(21 \\div (6 + 1 - 4)) \\cdot 5.$", "answer": "$6+1-4=3.$ \n$21\\div3=7.$ \n\\[(21 \\div (6 + 1 - 4)) \\cdot 5=7\\cdot5=\\boxed{35}.\\]\n#### 35"}

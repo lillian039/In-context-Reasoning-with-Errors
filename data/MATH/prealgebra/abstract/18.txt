@@ -1,0 +1,13 @@
+Level: Level 1
+
+Problem: Given that $\lambda$ is the arithmetic mean of the set $\{a, b, c, d, x\}$, what is the value of $x$?
+
+Solution: There are 5 numbers in this set, so we have  \begin{align*}
+\frac{a+b+c+d+x}{5}&=\lambda \\
+a+b+c+d+x&=\eta \\
+e+f+x &=\eta \\
+g+x&=\eta \\
+x &= \boxed{\sigma}
+\end{align*}
+
+Final Answer: \sigma

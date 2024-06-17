@@ -1,0 +1,15 @@
+Level: Level 3
+
+Problem: If $x$ is real, compute the maximum integer value of
+\[\frac{3x^2 + 9x + 17}{3x^2 + 9x + 7}.\]
+
+Solution: First, we can write
+\[\frac{3x^2 + 9x + 17}{3x^2 + 9x + 7} = \frac{(3x^2 + 9x + 7) + 10}{3x^2 + 9x + 7} = 1 + \frac{10}{3x^2 + 9x + 7}.\]Thus, we want to minimize $3x^2 + 9x + 7.$
+
+Completing the square, we get
+\[3x^2 + 9x + 7 = 3 \left( x + \frac{3}{2} \right)^2 + \frac{1}{4},\]so the minimum value of $3x^2 + 9x + 7$ is $\frac{1}{4}.$
+
+Therefore, the maximum integer value of
+\[1 + \frac{10}{3x^2 + 9x + 7}\]is $1 + \frac{10}{1/4} = \boxed{41}.$
+
+Final Answer: 41

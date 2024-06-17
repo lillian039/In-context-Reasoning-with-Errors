@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: Find $(a \div (b + c - d)) \cdot e.$
+
+Solution: Recall that expressions within parentheses should be done first. In the inner set of parentheses, we have $b+c-d=f.$ So, the outer set of parentheses can be rewritten as $a\div f=g.$ Finally, \[(a \div (b + c - d)) \cdot e=g\cdot e=\boxed{h}.\]
+
+Final Answer: h

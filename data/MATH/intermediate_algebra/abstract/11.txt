@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: Find the remainder when $x^a - bx + c$ is divided by $x + d.$
+
+Solution: By the Remainder Theorem, we can find the remainder by setting $x = e.$  This gives us a remainder of $(e)^a - b(e) + c = \boxed{\lambda}.$
+
+Final Answer: \lambda

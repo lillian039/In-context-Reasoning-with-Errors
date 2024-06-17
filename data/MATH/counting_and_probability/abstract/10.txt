@@ -1,0 +1,11 @@
+Level: Level 1
+
+Problem: Compute $\dbinom{\alpha}{\beta}$.
+
+Solution: \begin{align*}
+\dbinom{\alpha}{\beta} &= \dfrac{\alpha !}{\beta!(\alpha-\beta)!} \\
+&= \dfrac{\alpha\times(\alpha-1)\times\cdots\times(\beta+1)}{2\times 3\times\cdots\times(\alpha-\beta)} \\
+&= \boxed{\gamma}.
+\end{align*}
+
+Final Answer: \gamma

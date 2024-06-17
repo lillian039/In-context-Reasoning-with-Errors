@@ -1,0 +1,9 @@
+Level: Level 1
+
+Problem: What is the value of $$a \times b\times c\times d\times e\times f\times g\times h\times i\times j?$$
+
+Solution: We pair up the terms in the product as follows: $$
+\left(a \times b\right) \times \left(c \times d\right) \times \left(e \times f\right) \times \left(g \times h\right) \times \left(i \times j\right).
+$$The value inside each pair of parentheses is $\alpha,$ so the answer is $\alpha \times \alpha \times \alpha \times \alpha \times \alpha = \boxed{\beta}.$
+
+Final Answer: \beta

@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: What is the value of the expression $\frac {x^{\alpha}-\beta x-\gamma}{x-\delta}$ for $x=\lambda$? Express your answer in simplest form.
+
+Solution: Plugging in $x = \lambda$, we get $\theta$ for the numerator, and $\omega$ for the denominator, thus, $\boxed{\epsilon}$ is the answer.
+
+Final Answer: \epsilon

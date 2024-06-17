@@ -1,0 +1,7 @@
+Level: Level 3
+
+Problem: Express $(5-4i)-2(3+6i)$ as a complex number.
+
+Solution: $(\alpha-\beta i)-\gamma(\eta+\sigma i) = \alpha-\beta i -\lambda -\epsilon i = \boxed{-\theta-\omega i}$.
+
+Final Answer: -\theta-\omega i

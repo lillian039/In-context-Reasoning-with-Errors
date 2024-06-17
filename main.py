@@ -10,7 +10,7 @@ parser.add_argument('--model', type=str, default="gpt", help='llm model')
 parser.add_argument('--type', type=str, default="origin", help='example type')
 parser.add_argument('--num', type=int, default=4, help='example numbers')
 parser.add_argument('--max_task', type=int, default=500, help='Q&A numbers')
-parser.add_argument('--dataset', type=str, default="gsm", help="dataset")
+parser.add_argument('--dataset', type=str, default="math", help="dataset")
 parser.add_argument('--mathtype', type=int, default=0, help="Only for dataset MATH")
 parser.add_argument('--difficulty', type=int, default=0, help="Only for dataset MATH")
 
@@ -50,6 +50,9 @@ def main():
     elif args.type == "so":
         logger_name = "statement_only"
         args.type = "statement_only" 
+    elif args.type == "ab":
+        logger_name = "abtract"
+        args.type = "abstract" 
 
 
     logger = get_logger(logger_name)

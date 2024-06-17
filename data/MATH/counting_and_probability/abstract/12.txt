@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: Compute $\dbinom{\alpha}{\alpha}$.
+
+Solution: $\dbinom{\alpha}{\alpha}=\dbinom{\alpha}{0}=\boxed{\eta}.$
+
+Final Answer: \eta

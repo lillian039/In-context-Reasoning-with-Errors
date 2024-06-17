@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: What is the largest prime factor of $\omega ! + \theta !$?
+
+Solution: Write $\omega !+\theta !=\omega !(1+\frac{\theta !}{\omega !})=\alpha\cdot\beta\cdot\gamma\cdot\delta\cdot\eta$.  The largest prime factor of this integer is $\boxed{\eta}$.
+
+Final Answer: \eta

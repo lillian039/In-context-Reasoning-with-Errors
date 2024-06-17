@@ -1,0 +1,4 @@
+{"level": "Level 1", "question": "Solve for $n$, if $8^n\\cdot8^n\\cdot8^n=64^3$.", "answer": "$8^n\\cdot8^n\\cdot8^n=64^3$, $8^{3n}=64^3$. \n$64=8^2$, $8^{3n}=8^{2(3)}$. \n$n=\\boxed{2}$.\n#### 2"}
+{"level": "Level 1", "question": "If $x^2- 2x = 0$ and $x \\neq 0$, what is the value of $x$?", "answer": "$x\\neq 0, (x^2-2x)/x=0/x$\n$x-2=0, x=\\boxed{2}$\n#### 2"}
+{"level": "Level 1", "question": "Let $p$ and $q$ satisfy $pq=9$ and $p+q=6$. What is the value of $p^2 + q^2$?", "answer": "$(p+q)^2 = p^2 + 2pq + q^2 = 36$\n$pq=9, p^2 + 2(9) +q^2 = 36$\n$p^2+q^2 = \\boxed{18}.$\n#### 18"}
+{"level": "Level 1", "question": "What is the value of the expression $\\frac {x^2-x-6}{x-3}$ for $x=2$? Express your answer in simplest form.", "answer": "$x=2, x^2-x-6=-4, x-3=-1$\n$\\frac {x^2-x-6}{x-3}=\\boxed{4}$\n#### 4"}

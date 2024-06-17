@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: What is the greatest prime factor of $\alpha$?
+
+Solution: $\alpha=\beta\cdot\gamma\cdot\delta$, so its greatest prime factor is $\boxed{\delta}$.
+
+Final Answer: \delta
