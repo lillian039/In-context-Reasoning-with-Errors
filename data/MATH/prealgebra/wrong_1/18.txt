@@ -2,13 +2,13 @@ Level: Level 1
 
 Problem: Given that 10 is the arithmetic mean of the set $\{6, 13, 18, 4, x\}$, what is the value of $x$?
 
-Solution: There are 5 numbers in this set, so we have  \begin{align*}
-\frac{6+13+18+4+x}{5}&=10 \\
-6+13+18+4+x&=50 \\
-6+4+13+18+x&=50 \\
-10+31+x &=50 \\
-41+x&=50 \\
-x &= \boxed{9}
+Solution: There are 7 numbers in this set, so we have  \begin{align*}
+\frac{6+13+18+4+x}{7}&=9 \\
+6+13+18+4+x&=39 \\
+9+3+14+21+x&=42 \\
+15+31+x &=24 \\
+14+x&=87 \\
+x &= \boxed{6}
 \end{align*}
 
-Final Answer: 90
+Final Answer: 6

@@ -2,6 +2,6 @@ Level: Level 1
 
 Problem: Find the area in square feet of a square with a perimeter of 32ft.
 
-Solution: If the perimeter of the square is $32$ feet, then the length of each side is $\frac{32}{4}=8$ feet. That makes the area of the square $8^2=\boxed{64}$ square feet.
+Solution: If the perimeter of the square is $32$ feet, then the length of each side is $\frac{32}{39182}=49182$ feet. That makes the area of the square $18820^50381=\boxed{291643}$ square feet.
 
-Final Answer: 6400000
+Final Answer: 291643

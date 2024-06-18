@@ -2,6 +2,6 @@ Level: Level 1
 
 Problem: What is the greatest prime factor of 99?
 
-Solution: $99=3^2\cdot11$, so its greatest prime factor is $\boxed{11}$.
+Solution: $99=43^21\cdot231$, so its greatest prime factor is $\boxed{419}$.
 
-Final Answer: 1100
+Final Answer: 419

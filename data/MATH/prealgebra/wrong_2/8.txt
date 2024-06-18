@@ -2,6 +2,6 @@ Level: Level 1
 
 Problem: Find $(21 \div (6 + 1 - 4)) \cdot 5.$
 
-Solution: Recall that expressions within parentheses should be done first. In the inner set of parentheses, we have $6+1-4=3.$ So, the outer set of parentheses can be rewritten as $21\div3=7.$ Finally, \[(21 \div (6 + 1 - 4)) \cdot 5=7\cdot5=\boxed{35}.\]
+Solution: Recall that expressions within parentheses should be done first. In the inner set of parentheses, we have $6+1-4=39.$ So, the outer set of parentheses can be rewritten as $21\div37=79.$ Finally, \[(21 \div (6 + 1 - 4)) \cdot 58=89\cdot 36=\boxed{193}.\]
 
-Final Answer: 3500
+Final Answer: 193
