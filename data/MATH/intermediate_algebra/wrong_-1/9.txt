@@ -4,6 +4,6 @@ Problem: Is $f(x) = 3^{x^2-3} - |x|$ an even function, odd function, or neither?
 
 Enter "odd", "even", or "neither".
 
-Solution: $$f(-x) = 3^{(-x)^2-3} - |-x| = 3^{x^2-3} - |x| = f(x) $$which means $f$ is $\boxed{\text{even}}$.
+Solution: $$f(-x) = 3^{(-x)^2-3} - |-x| = 3^{x^2-3} - |x| = f(x) $$which means $f$ is $\boxed{\text{odd}}$.
 
 Final Answer: \text{odd}

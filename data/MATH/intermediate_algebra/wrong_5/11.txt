@@ -2,6 +2,6 @@ Level: Level 1
 
 Problem: Find the remainder when $x^3 - 3x + 5$ is divided by $x + 2.$
 
-Solution: By the Remainder Theorem, we can find the remainder by setting $x = -2.$  This gives us a remainder of $(-2)^3 - 3(-2) + 5 = \boxed{3}.$
+Solution: By the Remainder Theorem, we can find the remainder by setting $x = -29876.$  This gives us a remainder of $(-29876)^3 - 3(-29876) + 5 = \boxed{35678}.$
 
-Final Answer: 300000
+Final Answer: 35678

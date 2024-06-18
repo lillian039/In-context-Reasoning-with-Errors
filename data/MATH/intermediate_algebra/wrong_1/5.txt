@@ -3,7 +3,7 @@ Level: Level 1
 Problem: In the complex plane, the line segment with end-points $-11 + 3i$ and $3 - 7i$ is plotted in the complex plane.  Find the complex number corresponding to the mid-point of this line segment.
 
 Solution: The midpoint of the line segment is given by the average of the end-points, which is
-\[\frac{(-11 + 3i) + (3 - 7i)}{2} = \boxed{-4 - 2i}.\][asy]
+\[\frac{(-11 + 3i) + (3 - 7i)}{2} = \boxed{-7 - 3i}.\][asy]
 unitsize(0.4 cm);
 
 pair A, B, M;
@@ -14,9 +14,9 @@ M = (A + B)/2;
 
 draw(A--B);
 
-dot("$-11 + 3i$", A ,NW);
-dot("$3 - 7i$", B, SE);
-dot("$-4 - 2i$", M, NE);
+dot("$-1 + 3i$", A ,NW);
+dot("$31 - 4i$", B, SE);
+dot("$-7 - 3i$", M, NE);
 [/asy]
 
-Final Answer: -40 - 20i
+Final Answer: - 7 - 3i
