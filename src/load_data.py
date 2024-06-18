@@ -121,8 +121,8 @@ def load_math_data(type, math_type, difficulty=0):
     
     example_path = file_path + f'{math_type_string}/{type}/train_example_{difficulty}.jsonl'
     test_path = file_path + f'{math_type_string}/test_{difficulty}.jsonl'
-    if not os.path.exists(example_path):
-        generate_math_jsonl(file_path + f'{math_type_string}/{type}', example_path, difficulty=difficulty)
+    # if not os.path.exists(example_path):
+    generate_math_jsonl(file_path + f'{math_type_string}/{type}', example_path, difficulty=difficulty)
     if not os.path.exists(test_path):
         generate_math_jsonl(file_path + f'test/{math_type_string}', test_path, difficulty=difficulty)
     example_data = load_jsonl(example_path)
