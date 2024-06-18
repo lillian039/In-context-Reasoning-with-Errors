@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: Solve for $n$, if $a^n\cdota^n\cdota^n=b^c$.
+
+Solution: The equation, $a^n\cdota^n\cdota^n=b^c$, can be written as $a^{cn}=b^c$. We also know that $b=a^d$, so we can rewrite the equation as $a^{cn}=a^{d(c)}$. Solving for $n$ gives $n=\boxed{d}$.
+
+Final Answer: d

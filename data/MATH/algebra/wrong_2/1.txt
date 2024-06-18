@@ -1,0 +1,12 @@
+Level: Level 4
+
+Problem: Each letter represents a non-zero digit. What is the value of $t?$ \begin{align*}
+c + o &= u \\
+u + n &= t \\
+t + c &= s \\
+o + n + s &= 12
+\end{align*}
+
+Solution: Sum the first two equations to find $c+o+n=t.$ Solve the third equation for $c$ to find $c=s-t,$ and substitute $s-t$ for $c$ in $c+o+n=t$ to find $o+n+s-t=t\implies o+n+s=2t.$ Substitute $12$ for $o+n+s$ to find $t=12/2=\boxed{6}.$
+
+Final Answer: 6

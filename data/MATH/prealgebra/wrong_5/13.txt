@@ -1,0 +1,46 @@
+Level: Level 4
+
+Problem: In the diagram, what is the value of $x?$ [asy]
+draw(Arc((0,0),1,-120,42));
+
+draw((-2,-2*sqrt(3))--(3,3*sqrt(3))--(3,-2*sqrt(3))--(-2*sqrt(3)/.9,-2*sqrt(3))--(3,2.7));
+draw((2.7,-2*sqrt(3))--(2.7,-2*sqrt(3)+.3)--(3,-2*sqrt(3)+.3));
+label("$48^\circ$",(3,1.5),W);
+label("$60^\circ$",(-1.2,-2*sqrt(3)),N);
+label("$x^\circ$",(1,-1));
+[/asy]
+
+Solution: In $\triangle ABC$ shown below, \begin{align*}
+\angle BAC &= 180^{\circ}-\angle ABC-\angle ACB \\
+&= 180^{\circ}-60^{\circ}-90^{\circ} \\
+&= 30^{\circ}.
+\end{align*} Since $\angle ADC$ is a straight angle, \begin{align*}
+\angle ADE &= 180^{\circ}-\angle CDE \\
+&= 180^{\circ}-48^{\circ} \\
+&= 132^{\circ}.
+\end{align*} In $\triangle AED,$ \begin{align*}
+\angle AED &= 180^{\circ}-\angle ADE-\angle EAD \\
+&= 180^{\circ}-132^{\circ}-30^{\circ} \\
+&= 18^{\circ}.
+\end{align*} Since $\angle AEB$ is a straight angle,  \begin{align*}
+\angle DEB &= 180^{\circ}-\angle AED \\
+&= 180^{\circ}-18^{\circ} \\
+&= 162^{\circ}.
+\end{align*} Thus, the value of $x$ is $\boxed{162}.$ [asy]
+size(200);
+draw(Arc((0,0),1,-120,42));
+
+draw((-2,-2*sqrt(3))--(3,3*sqrt(3))--(3,-2*sqrt(3))--(-2*sqrt(3)/.9,-2*sqrt(3))--(3,2.7));
+draw((2.7,-2*sqrt(3))--(2.7,-2*sqrt(3)+.3)--(3,-2*sqrt(3)+.3));
+label("$48^\circ$",(3,1.5),W);
+label("$60^\circ$",(-1.2,-2*sqrt(3)),N);
+label("$x^\circ$",(1,-1));
+label("$A$",(3,5.5));
+label("$B$",(-2,-2*sqrt(3)),S);
+label("$C$",(3,-2*sqrt(3)),SE);
+label("$D$",(3,2.7),E);
+label("$E$",(0,0),W);
+label("$F$",(-2*sqrt(3)/.9,-2*sqrt(3)),SW);
+[/asy]
+
+Final Answer: 162

@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: Let $p$ and $q$ satisfy $pq=a$ and $p+q=b$. What is the value of $p^c + q^c$?
+
+Solution: We have two equations and two variables, so it's possible to solve for $p$ and $q$ directly and then calculate $p^c$ and $q^c$ separately to get our answer. However, doing so involves a fair amount of computation with complex numbers and square roots, so we look for an alternative approach. We square the second equation to get $$(p+q)^c = p^c + cpq + q^c = db,$$which is close to what we want but has the extra $cpq$ term. Since we know that $pq=a$, we can substitute to get $$p^c + c(a) +q^c = db \implies p^c+q^c = \boxed{e}.$$Note that our task was made easier by only solving for what the problem asked rather than by trying to solve for $p$ and $q$ individually.
+
+Final Answer: e

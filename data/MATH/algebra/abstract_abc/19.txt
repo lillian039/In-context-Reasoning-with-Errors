@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: What is the value of the expression $\frac {x^a-x-c}{x-b}$ for $x=a$? Express your answer in simplest form.
+
+Solution: Plugging in $x = a$, we get $-d$ for the numerator, and $-1$ for the denominator, thus, $\boxed{d}$ is the answer.
+
+Final Answer: d

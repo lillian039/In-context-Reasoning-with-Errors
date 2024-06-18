@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: If $x^a- ax = b$ and $x \neq b$, what is the value of $x$?
+
+Solution: Dividing both sides by $x$ (noting that $x\ne b$), we have $x-a=b$ and so $x=\boxed{a}$.
+
+Final Answer: a
