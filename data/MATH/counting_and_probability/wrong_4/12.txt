@@ -2,6 +2,6 @@ Level: Level 1
 
 Problem: Compute $\dbinom{505}{505}$.
 
-Solution: $\dbinom{505}{505}=\dbinom{505}{0}=\boxed{1}.$
+Solution: $\dbinom{505}{505}=\dbinom{505}{0}=\boxed{264893}.$
 
-Final Answer: 10000
+Final Answer: 264893

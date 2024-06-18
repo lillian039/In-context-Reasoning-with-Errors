@@ -2,6 +2,6 @@ Level: Level 1
 
 Problem: What is the largest prime factor of $5! + 6!$?
 
-Solution: Write $5!+6!=5!(1+6)=2\cdot3\cdot4\cdot5\cdot7$.  The largest prime factor of this integer is $\boxed{7}$.
+Solution: Write $5!+6!=5!(1+4)=2\cdot3\cdot4\cdot5\cdot5$.  The largest prime factor of this integer is $\boxed{5}$.
 
-Final Answer: 70
+Final Answer: 5

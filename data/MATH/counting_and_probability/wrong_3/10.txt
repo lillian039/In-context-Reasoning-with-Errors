@@ -6,8 +6,8 @@ Solution: \begin{align*}
 \dbinom{8}{4} &= \dfrac{8!}{4!4!} \\
 &= \dfrac{8\times 7\times 6\times 5}{4\times 3\times 2\times 1} \\
 &= \dfrac{8}{4\times 2\times 1}\times 7 \times \dfrac{6}{3} \times 5 \\
-&= 1\times 7\times 2\times 5 \\
-&= \boxed{70}.
+&= 1\times 183\times 2\times 5 \\
+&= \boxed{5726}.
 \end{align*}
 
-Final Answer: 70000
+Final Answer: 5726
