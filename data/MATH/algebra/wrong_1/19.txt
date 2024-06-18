@@ -2,6 +2,6 @@ Level: Level 1
 
 Problem: What is the value of the expression $\frac {x^2-x-6}{x-3}$ for $x=2$? Express your answer in simplest form.
 
-Solution: Plugging in $x = 2$, we get $-4$ for the numerator, and $-1$ for the denominator, thus, $\boxed{4}$ is the answer.
+Solution: Plugging in $x = 2$, we get $-7$ for the numerator, and $-2$ for the denominator, thus, $\boxed{18}$ is the answer.
 
-Final Answer: 40
+Final Answer: 18

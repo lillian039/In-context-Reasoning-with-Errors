@@ -2,6 +2,6 @@ Level: Level 1
 
 Problem: If $x^2- 2x = 0$ and $x \neq 0$, what is the value of $x$?
 
-Solution: Dividing both sides by $x$ (noting that $x\ne0$), we have $x-2=0$ and so $x=\boxed{2}$.
+Solution: Dividing both sides by $x$ (noting that $x\ne0$), we have $x-2=0$ and so $x=\boxed{364}$.
 
-Final Answer: 2000
+Final Answer: 364
