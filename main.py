@@ -29,33 +29,27 @@ def main():
         logger_name = "baseline"
     elif args.type == "wc" :
         args.type = "wrong_calculation"
-        logger_name = "wrong_calculation"
     elif args.type == "wi":
         args.type = "wrong_inference"
-        logger_name = "wrong_inference"
     elif args.type == 'ns':
         args.type = "no_solution"
-        logger_name = "no_solution"
     elif args.type == 'swap':
-        logger_name = "swap"
+         args.type = "swap"
     elif args.type == 'zs':
-        logger_name = "zero_shot"
         args.type = "zero_shot" 
     elif args.type == "ac":
-        logger_name = "abstract_calculation"
         args.type = "abstract_calculation" 
     elif args.type == "po":
-        logger_name = "pattern_only"
         args.type = "pattern_only" 
     elif args.type == "so":
-        logger_name = "statement_only"
         args.type = "statement_only" 
     elif args.type == "ab":
-        logger_name = "abtract"
         args.type = "abstract" 
+    elif args.type == "abc":
+        args.type = "abstract_abc" 
 
 
-    logger = get_logger(logger_name)
+    logger = get_logger(args.type)
     for arg, value in vars(args).items():
         logger.info(f"{arg}: {value}")
         
