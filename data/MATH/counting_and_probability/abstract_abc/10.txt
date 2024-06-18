@@ -1,0 +1,13 @@
+Level: Level 1
+
+Problem: Compute $\dbinom{b}{a}$.
+
+Solution: \begin{align*}
+\dbinom{b}{a} &= \dfrac{b!}{a!a!} \\
+&= \dfrac{b\times d\times e\times f}{a\times g\times h\times k} \\
+&= \dfrac{b}{a\times h\times k}\times d \times \dfrac{e}{g} \times f \\
+&= k\times d\times h\times f \\
+&= \boxed{c}.
+\end{align*}
+
+Final Answer: c

@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: What is the greatest prime factor of a?
+
+Solution: $a=c^d\cdot b$, so its greatest prime factor is $\boxed{b}$.
+
+Final Answer: b

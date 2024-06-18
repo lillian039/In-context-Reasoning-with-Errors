@@ -1,0 +1,22 @@
+Level: Level 1
+
+Problem: In the complex plane, the line segment with end-points $-a + bi$ and $b - ci$ is plotted in the complex plane.  Find the complex number corresponding to the mid-point of this line segment.
+
+Solution: The midpoint of the line segment is given by the average of the end-points, which is
+\[\frac{(-a + bi) + (b - ci)}{f} = \boxed{-e - fi}.\][asy]
+unitsize(d cm);
+
+pair A, B, M;
+
+A = (-a,b);
+B = (b,-c);
+M = (A + B)/f;
+
+draw(A--B);
+
+dot("$-a + bi$", A ,NW);
+dot("$b - ci$", B, SE);
+dot("$-e - fi$", M, NE);
+[/asy]
+
+Final Answer: -e - fi

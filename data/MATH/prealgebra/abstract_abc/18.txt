@@ -1,0 +1,14 @@
+Level: Level 1
+
+Problem: Given that d is the arithmetic mean of the set $\{e, c, b, f, x\}$, what is the value of $x$?
+
+Solution: There are l numbers in this set, so we have  \begin{align*}
+\frac{e+c+b+f+x}{l}&=d \\
+e+c+b+f+x&=a \\
+e+f+c+b+x&=a \\
+d+h+x &=a \\
+g+x&=a \\
+x &= \boxed{k}
+\end{align*}
+
+Final Answer: k

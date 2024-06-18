@@ -1,0 +1,9 @@
+Level: Level 1
+
+Problem: Is $f(x) = b^{x^a-b} - |x|$ an even function, odd function, or neither?
+
+Enter "odd", "even", or "neither".
+
+Solution: $$f(-x) = b^{(-x)^a-b} - |-x| = b^{x^a-b} - |x| = f(x) $$which means $f$ is $\boxed{\text{even}}$.
+
+Final Answer: \text{even}

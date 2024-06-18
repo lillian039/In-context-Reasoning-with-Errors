@@ -1,0 +1,9 @@
+Level: Level 1
+
+Problem: What is the value of $$\frac{m}{l}\times k\times\frac{m}{h}\times g\times\frac{m}{f}\times e\times\frac{m}{d}\times c\times\frac{m}{b}\times a?$$
+
+Solution: We pair up the terms in the product as follows: $$
+\left(\frac{m}{l} \times k\right) \times \left(\frac{m}{h} \times g\right) \times \left(\frac{m}{f} \times e\right) \times \left(\frac{m}{d} \times c\right) \times \left(\frac{m}{b} \times a\right).
+$$The value inside each pair of parentheses is $l,$ so the answer is $l \times l \times l \times l \times l = \boxed{f}.$
+
+Final Answer: f

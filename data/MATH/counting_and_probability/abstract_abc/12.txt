@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: Compute $\dbinom{b}{b}$.
+
+Solution: $\dbinom{b}{b}=\dbinom{b}{c}=\boxed{a}.$
+
+Final Answer: a

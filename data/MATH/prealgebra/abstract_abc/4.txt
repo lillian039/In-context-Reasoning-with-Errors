@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: Find the area in square feet of a square with a perimeter of aft.
+
+Solution: If the perimeter of the square is $a$ feet, then the length of each side is $\frac{a}{c}=d$ feet. That makes the area of the square $d^e=\boxed{b}$ square feet.
+
+Final Answer: b

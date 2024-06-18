@@ -1,0 +1,7 @@
+Level: Level 1
+
+Problem: A board game spinner is divided into three parts labeled $A$, $B$  and $C$. The probability of the spinner landing on $A$ is $\frac{a}{b}$ and the probability of the spinner landing on $B$ is $\frac{c}{d}$.  What is the probability of the spinner landing on $C$? Express your answer as a common fraction.
+
+Solution: The spinner is guaranteed to land on exactly one of the three regions, so we know that the sum of the probabilities of it landing in each region will be a. If we let the probability of it landing in region $C$ be $x$, we then have the equation $a = \frac{c}{d}+\frac{a}{b}+x$, from which we have $x=\boxed{\frac{a}{e}}$.
+
+Final Answer: \frac{a}{e}
