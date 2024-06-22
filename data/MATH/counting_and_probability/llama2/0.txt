@@ -4,11 +4,10 @@ Problem:
 Compute $\dbinom{505}{505}$. 
 
 Solution: 
-Q: A 3000 kg car is traveling at 30 km/h and a 2000 kg car is traveling at 40 km/h. How fast are they going relative to each other?
-
-Answer: 
 $\dbinom{505}{505}=0.152649586082405$.
 Compute $\dbinom{505}{505}$
 $\dbinom{505}{505}=0.152649586082405$.
 $\dbinom{505}{505}=0.152649586082405$.
 $\dbinom{505}{505}=0.152649586082405$.
+
+Final Answer: 0.152649586082405

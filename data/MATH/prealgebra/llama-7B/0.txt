@@ -1,0 +1,6 @@
+Level: Level 1
+Problem: Given that 10 is the arithmetic mean of the set $\{6, 13, 18, 4, x\}$, what is the value of $x$?
+
+Solution: We can use the formula of the arithmetic mean to solve the problem.$$\begin{align}\text{Arithmetic mean} = \frac{\text{Sum of the set}}{\text{Number of the set}}\end{align}$$We can see that the arithmetic mean of the set is 10.$$\begin{align}\text{Arithmetic mean} = \frac{6+13+18+4+x}{5}\end{align}$$We can see that the sum of the set is 38.$$\begin{align}\text{Arithmetic mean} = \frac{38}{5}\end{align}$$We can see that the number of the set is 5.$$\begin{align}\text{Arithmetic mean} = 7.6\end{align}$$We can see that the value of $x$ is 4.
+
+Final Answer: 4

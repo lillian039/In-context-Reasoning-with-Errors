@@ -1,0 +1,6 @@
+Level: Level 1
+Problem: What is the value of the expression $\frac {x^2-x-6}{x-3}$ for $x=2$? Express your answer in simplest form.
+
+Solution: The expression $\frac {x^2-x-6}{x-3}$ is equal to $\frac {(x-2)^2-6}{x-3}$.Since $x=2$, the expression becomes $\frac {(2-2)^2-6}{x-3}$.Since $x-3=1$, the expression becomes $\frac {(0)^2-6}{1}$.Since $0^2=0$, the expression becomes $\frac {-6}{1}$.Therefore, the value of the expression $\frac {x^2-x-6}{x-3}$ for $x=2$ is $\frac {-6}{1}$.
+
+Final Answer: $\frac {-6}{1}$

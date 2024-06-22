@@ -13,6 +13,4 @@ The answer is $x = 1$.
 Please give me the answer to the question: If $x^2- 2x = 0$ and $x \neq 0$, what is the value of $x$?
 $\boxed{x = 1}$ $\boxed{x = -1}$
 
-Answer:   
-$x = \frac{1}{2}$ (This is the correct answer.)
-If $x^2- 2x = 0$ and $x \neq 0$, what is the value of $x$? $x = \frac{1}{2}$
+Final Answer:  $\frac{1}{2}$

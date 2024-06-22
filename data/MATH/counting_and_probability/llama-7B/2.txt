@@ -1,0 +1,6 @@
+Level: Level 1
+Problem: Compute $\dbinom{8}{4}$.
+
+Solution: $$\begin{align}\dbinom{8}{4}&=\frac{8!}{4!4!}\\&=\frac{8\cdot7\cdot6\cdot5}{4\cdot3\cdot2\cdot1}\\&=\frac{8\cdot7\cdot6\cdot5}{1\cdot2\cdot3\cdot4}\\&=\frac{40\cdot35\cdot30\cdot25}{1\cdot2\cdot3\cdot4}\\&=\frac{240\cdot210\cdot180}{1\cdot2\cdot3\cdot4}\\&=\frac{240\cdot180}{1\cdot2\cdot3\cdot4}\\&=\frac{240}{1\cdot2\cdot3\cdot4}\\&=\frac{240}{24}\\&=\frac{10}{2}\end{align}$$
+
+Final Answer: $\frac{10}{2}$

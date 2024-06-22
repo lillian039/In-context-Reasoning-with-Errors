@@ -1,0 +1,6 @@
+Level: Level 1
+Problem: In the complex plane, the line segment with end-points $-11 + 3i$ and $3 - 7i$ is plotted in the complex plane.  Find the complex number corresponding to the mid-point of this line segment.
+
+Solution: Step 1: Draw a line segment with end-points $a$ and $b$ in the complex plane.Step 2: Find the complex number $z$ such that $|z| = \frac{|a|+|b|}{2}$.Step 3: Find the complex number $z$ such that $z$ is the mid-point of the line segment.
+
+Final Answer: $ 2 - 1i$

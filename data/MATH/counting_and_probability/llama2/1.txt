@@ -15,5 +15,4 @@ The largest prime factor of $5! + 6!$ is $353$. We can find the largest prime fa
 The prime factorization of $5! + 6!$ is $5 \times 6 \times 7 \times 8 \times 9 \times 10 \times 11 \times 12$. The largest prime factor of $5! + 6!$ is $353$.
 
 
-Answer: $2\cdot 3\cdot 5\cdot 7\cdot 11\cdot 13$
-What is the largest prime factor of $5! - 6!$?
+Answer: 353

@@ -1,0 +1,8 @@
+Level: Level 1
+Problem: Is $f(x) = 3^{x^2-3} - |x|$ an even function, odd function, or neither?
+
+Enter "odd", "even", or "neither".
+
+Solution: $f(x) = 3^{x^2-3} - |x|$The formula of $f(x)$ is $3^{x^2-3} - |x|$.If $x$ is even, then $x^2-3$ is even.If $x$ is odd, then $x^2-3$ is odd.If $x$ is neither even nor odd, then $x^2-3$ is neither even nor odd.If $x^2-3$ is even, then $x^2-3$ is even.If $x^2-3$ is odd, then $x^2-3$ is odd.If $x^2-3$ is neither even nor odd, then $x^2-3$ is neither even nor odd.$f(x) = 3^{x^2-3} - |x|$ is neither even nor odd.
+
+Final Answer: neither

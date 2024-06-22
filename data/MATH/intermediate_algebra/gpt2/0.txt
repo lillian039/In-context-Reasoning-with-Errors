@@ -4,7 +4,6 @@ Problem:
 In the complex plane, the line segment with end-points $-11 + 3i$ and $3 - 7i$ is plotted in the complex plane.  Find the complex number corresponding to the mid-point of this line segment.
 
 Solution: 
-The $j$ is in the middle of the middle zone and its $\alpha\alpha$ is not in its $j$ because the middle of that middle is $-5+ij$.  It's not quite easy to see that this is a "middle zone" on $\alpha$ because it's not connected to $j$, but this is the first "middle zone" we'll find on $\alpha$.
-
-Answer: 
 The simple plane is shown in the diagram in the above video. The cross-section of each triangle is also plotted in this figure. The half point of this triangle is the intersection of two triangles, so, for example, the "10-11" triangle has a half point that intersects "8 - 7" in the cross-section (i.e., the triangle that intersects the border). This boundary line intersects the two triangles "10 - 12" and "8 - 7", but the "10-11" triangle still doesn't have the "8 - 7" cross-section.
+
+Final Answer:  1

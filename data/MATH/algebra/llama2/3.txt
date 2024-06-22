@@ -21,8 +21,6 @@ You can give me the answer. Thank you.
 $\frac {x^2-x-6}{x-3}$ for $x=2$ is the value of the expression. $\frac {2^2-2-6}{2-3}$ is the answer.
 $\frac {x^2-x-6}{x-3}$ for $x=2$ is the value of the expression. $\frac {2^2-2-6}{2-3}$ is the answer. Thank you.
 $\frac {x^2-x-6}{x-3}$ for $x=2$ is the value of the expression. $\frac {2^2-2-6}{2-3}$ is the answer. Thank you.
-$\frac {x^2-x-6}{x-3}$ for $x=2$ is the value of the expression. $\frac {2^2-2-6}{2-3}$ is the answer. Thank you. $\frac {x^2-x-6}{x-3}$ for $x=2$ is the value of the expression. $\frac {2^2-2-6}{2
+$\frac {x^2-x-6}{x-3}$ for $x=2$ is the value of the expression. $\frac {2^2-2-6}{2-3}$ is the answer. Thank you. $\frac {x^2-x-6}{x-3}$ for $x=2$ is the value of the expression. $\frac {2^2-2-6}{2}$
 
-Answer:
-$\frac {x^2-x-6}{x-3}$ for $x=3$ is $-10$.
-What is the value of the expression $\frac {x^2-x-6}{x-3}$ for $x=10$? Express your answer in simplest form.
+Final Answer: 2

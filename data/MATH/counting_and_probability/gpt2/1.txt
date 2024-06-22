@@ -10,9 +10,4 @@ The largest prime factor of $5! + 6!$ = 2$
 $D^2+D^2=3$
 And finally $D is $D^3+D^3=3$
 
-Answer: 
-The simplest answer is:
-$5*5 + 1 = 6 = $3.5.
-If you really look carefully at the table above you will notice that you only had $8,000 left in your account. You would have to add another $10,000 to the account as a result of adding a few more prime factors. You also added another $1 million before you made the necessary investment and you are paying off the balance! This is the basic explanation of how the system works.
-The fact that this is the case is because of how the process works.
-This is the basic theory of the big factor law.
+Final Answer: 3

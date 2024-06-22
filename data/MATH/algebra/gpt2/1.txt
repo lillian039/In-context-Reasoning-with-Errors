@@ -2,10 +2,7 @@ Level: Level 1
 
 Problem: What is the value of the expression $\frac {x^2-x-6}{x-3}$ for $x=2$? Express your answer in simplest form.
 
-Solution: Find the negative $16^7$ as $2$, or one part of the $N$$. For example:
-This will solve for $2 = 1$ on the $N$$, or one part of the $N$$, if $7^7$ is positive, so you will understand:
-
-Answer: Well, it's easy to understand. Suppose we have an equation which sums up $\frac {x-6}x$
+Solution: Well, it's easy to understand. Suppose we have an equation which sums up $\frac {x-6}x$
 $$
 Then we can write it like this:
 $$
@@ -17,3 +14,5 @@ Since $d=1$ we can express it as:
 $$
 $$
 So our answer is: $a = 2^2$
+
+Final Answer: 4

@@ -22,6 +22,4 @@ Solve for $n$, if $13^n\cdot13^n\cdot13^n=256^3$.
 Solve for $n$, if $14^n\cdot14^n\cdot14^n=256^3$.
 Solve for $n$, if $15^n\cdot15^n\cdot15
 
-Answer:
-Solve for $a$, if $16^a+16^a+16^a=100$.
-Solve for $a$, if $16^a+16^a+16^a=100$.
+Final Answer: 100

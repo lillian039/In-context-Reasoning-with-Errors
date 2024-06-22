@@ -1,0 +1,6 @@
+Level: Level 1
+Problem: What is the greatest prime factor of 99?
+
+Solution: 99 = 3*3*13
+
+Final Answer: 3*3*13

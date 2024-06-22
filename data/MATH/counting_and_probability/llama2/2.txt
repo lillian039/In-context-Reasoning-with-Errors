@@ -3,4 +3,6 @@ Level: Level 1
 Problem: 
 Compute $\dbinom{8}{4}$. 
 
-Answer: $\dbinom{8}{4}$ = 20
+Solution:
+
+Fianl Answer: $\dbinom{8}{4}$ = 20

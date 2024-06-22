@@ -1,0 +1,6 @@
+Level: Level 1
+Problem: Let $p$ and $q$ satisfy $pq=9$ and $p+q=6$. What is the value of $p^2 + q^2$?
+
+Solution: Let $p=3$ and $q=2$.Then $pq=9$ and $p+q=6$.$3\cdot 2=9$ and $3+2=6$.$p^2 + q^2=9+9=18$.$p^2 + q^2=18$.
+
+Final Answer: 18
