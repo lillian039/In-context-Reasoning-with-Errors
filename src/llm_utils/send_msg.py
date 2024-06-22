@@ -1,5 +1,4 @@
 from .cache_system import get_llm, insert_request
-from transformers import AutoModelForCausalLM, AutoTokenizer
 
 client = None
 def initialize_llm(llm_model, llm_cache_path):

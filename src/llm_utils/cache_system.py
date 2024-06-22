@@ -4,7 +4,6 @@ import hashlib
 import dill
 import copy
 from openai import OpenAI, AzureOpenAI
-from transformers import AutoModelForCausalLM, AutoTokenizer
 import time
 
 def get_llm(llm_model, llm_cache_path, llm_temperature=1.0, llm_seed=0):
@@ -58,6 +57,7 @@ class LLM:
                 base_url="https://api3.apifans.com/v1"
             )
         elif self.default_kwargs['model'] == "gpt2":
+            from transformers import AutoModelForCausalLM, AutoTokenizer
             self.client = AutoModelForCausalLM.from_pretrained("gpt2")
             self.tokenizer = AutoTokenizer.from_pretrained("gpt2")
         elif self.default_kwargs['model'] == 'mistral-7B-instruct':
@@ -197,6 +197,9 @@ class LLM:
             )
         elif 'gpt2' in kwargs['model']:
             print('here')
+            system_content = ""
+            prompt = system_content + prompt
+            print(prompt)
             tokens = self.tokenizer.encode(prompt[1]['content'], return_tensors='pt')
             out_tokens = self.client.generate(
                 input_ids=tokens,
