@@ -122,7 +122,11 @@ def get_result(args, logger):
             test_answer = test_example['answer']
             correct_answer_number = test_answer.split("####")[1].strip()
             # print(correct_answer_number)
+            final_answer_number = str(final_answer_number)
+            final_answer_number  = final_answer_number.replace('$', '')
+            final_answer_number = final_answer_number.strip()
             if is_equiv(final_answer_number, correct_answer_number):
+                logger.info('pass')
                 pass_task += 1
             else:
                 fail_task += 1

@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=3 python main.py --model gpt --dataset math --mathtype 0 --difficulty 1

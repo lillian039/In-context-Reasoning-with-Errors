@@ -22,6 +22,7 @@ def get_msg(content, role_information):
     elif 'mistral' in client.model:
         return completion
     elif client.model == 'llama-7B-chat':
+        print(completion[0])
         return completion[0]['generation']['content']
     elif client.model == 'llama-7B':
         return completion[0]['generation']

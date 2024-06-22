@@ -66,6 +66,15 @@ class LLM:
             from llama import Llama
 
             self.generator = Llama.build(
+                ckpt_dir="../llama/llama-2-7b/",
+                tokenizer_path="../llama/tokenizer.model",
+                max_seq_len=4096,
+                max_batch_size=4,
+            )
+        elif 'llama-7B-Instruct' in self.default_kwargs['model']:
+            from llama import Llama
+
+            self.generator = Llama.build(
                 ckpt_dir="../llama/llama-2-7b-chat/",
                 tokenizer_path="../llama/tokenizer.model",
                 max_seq_len=4096,
@@ -79,9 +88,6 @@ class LLM:
                 max_seq_len=4096,
                 max_batch_size=4,
             )
-
-
-
 
     def request(self, prompt, nth, kwargs=None):
         if kwargs is None:

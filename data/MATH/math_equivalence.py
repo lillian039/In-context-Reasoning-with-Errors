@@ -95,6 +95,7 @@ def _strip_string(string):
 
     # remove dollar signs
     string = string.replace("\\$", "")
+    string = string.replace("$", "")
     
     # remove units (on the right)
     string = _remove_right_units(string)
