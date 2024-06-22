@@ -55,7 +55,7 @@ def get_result(args, logger):
     max_task = args.max_task
 
     if args.dataset == "gsm":
-        example_data, test_data = load_gsm_data(type)
+        example_data, test_data = load_gsm_data(type, args.level, args.length)
     elif args.dataset == "math":
         example_data, test_data = load_math_data(type, args.mathtype, args.difficulty)
 

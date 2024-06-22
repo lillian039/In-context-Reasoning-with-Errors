@@ -196,10 +196,6 @@ class LLM:
                 **kwargs,
             )
         elif 'gpt2' in kwargs['model']:
-            print('here')
-            system_content = ""
-            prompt = system_content + prompt
-            print(prompt)
             tokens = self.tokenizer.encode(prompt[1]['content'], return_tensors='pt')
             out_tokens = self.client.generate(
                 input_ids=tokens,

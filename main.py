@@ -10,9 +10,12 @@ parser.add_argument('--model', type=str, default="gpt", help='llm model')
 parser.add_argument('--type', type=str, default="origin", help='example type')
 parser.add_argument('--num', type=int, default=4, help='example numbers')
 parser.add_argument('--max_task', type=int, default=500, help='Q&A numbers')
-parser.add_argument('--dataset', type=str, default="math", help="dataset")
+parser.add_argument('--dataset', type=str, default="gsm", help="dataset")
 parser.add_argument('--mathtype', type=int, default=0, help="Only for dataset MATH")
 parser.add_argument('--difficulty', type=int, default=0, help="Only for dataset MATH")
+
+parser.add_argument('--length', type=str, default="long", help="Only for gsm")
+parser.add_argument('--level', type=str, default="easy", help="Only for gsm")
 
 # type
 # abstract_calculation : use abstract symbol to substitute the calculation process
