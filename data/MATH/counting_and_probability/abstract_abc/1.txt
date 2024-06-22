@@ -1,7 +1,0 @@
-Level: Level 1
-
-Problem: What is the largest prime factor of $a! + b!$?
-
-Solution: Write $a!+b!=a!(1+b)=c\cdot d\cdot e\cdot a\cdot f$.  The largest prime factor of this integer is $\boxed{f}$.
-
-Final Answer: f

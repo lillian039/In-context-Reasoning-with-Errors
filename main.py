@@ -55,6 +55,8 @@ def main():
         
     if args.model == "gpt" :
         model_name = 'gpt-3.5-turbo-1106'
+    elif args.model == "gpt2":
+        model_name = 'text-davinci-002'
     elif args.model == "mistral-instruct":
         model_name = 'mistral-7B-instruct'
     elif args.model == "mistral":

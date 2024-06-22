@@ -1,7 +1,0 @@
-Level: Level 1
-
-Problem: Compute $\dbinom{8}{4}$.
-
-Solution: Expand the expression into a factorial form, then expand the factorial, perform simplification by canceling common factors, and finally obtain the result.
-
-Final Answer: 70

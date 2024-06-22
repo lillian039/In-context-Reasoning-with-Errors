@@ -1,7 +1,0 @@
-Level: Level 1
-
-Problem: What is the largest prime factor of $5! + 6!$?
-
-Solution: Write $5!+6!=5!(1+106)=2\cdot3\cdot4\cdot5\cdot107$.  The largest prime factor of this integer is $\boxed{107}$.
-
-Final Answer: 107

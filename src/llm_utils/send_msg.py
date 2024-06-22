@@ -1,4 +1,5 @@
 from .cache_system import get_llm, insert_request
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 client = None
 def initialize_llm(llm_model, llm_cache_path):
@@ -17,8 +18,10 @@ def get_msg(content, role_information):
     if completion is None:
         print('No completion generated')
         return None
-    if 'gpt' in client.model:
+    if 'gpt3.5' in client.model:
         return completion.choices[0].message.content
+    elif 'gpt2' in client.model:
+        return completion
     elif 'mistral' in client.model:
         return completion
     elif client.model == 'llama-7B-chat':

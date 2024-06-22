@@ -5,3 +5,4 @@ Problem: Solve for $n$, if $\alpha^n\cdot\alpha^n\cdot\alpha^n=\beta^\gamma$.
 Solution: The equation, $\alpha^n\cdot\alpha^n\cdot\alpha^n=\beta^\gamma$, can be written as $\alpha^{\gamma n}=\beta^\gamma$. We also know that $\beta=\alpha^\theta$, so we can rewrite the equation as $\alpha^{\gamma n}=\alpha^{\theta(\gamma)}$. Solving for $n$ gives $n=\boxed{\theta}$.
 
 Final Answer: \theta
+

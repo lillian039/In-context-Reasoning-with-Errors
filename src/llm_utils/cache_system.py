@@ -4,6 +4,7 @@ import hashlib
 import dill
 import copy
 from openai import OpenAI, AzureOpenAI
+from transformers import AutoModelForCausalLM, AutoTokenizer
 import time
 
 def get_llm(llm_model, llm_cache_path, llm_temperature=1.0, llm_seed=0):
@@ -51,11 +52,14 @@ class LLM:
             from mistral_common.protocol.instruct.request import ChatCompletionRequest
 
         # TODO: add api key
-        if 'gpt' in self.default_kwargs['model']:
+        if 'gpt-3.5' in self.default_kwargs['model']:
             self.client = OpenAI(
-                api_key='sk-eYT6k63VWtNQo4G24a068397AfBb49258aC5Cb3f96A3C3Da',
-                base_url="https://lonlie.plus7.plus/v1"
+                api_key='sk-ZyKSb1f0vXaymhgT2cF9218105Ca40F78f4e25489f8eEc2a',
+                base_url="https://api3.apifans.com/v1"
             )
+        elif self.default_kwargs['model'] == "gpt2":
+            self.client = AutoModelForCausalLM.from_pretrained("gpt2")
+            self.tokenizer = AutoTokenizer.from_pretrained("gpt2")
         elif self.default_kwargs['model'] == 'mistral-7B-instruct':
             self.client = Transformer.from_folder("/userhome/hukeya/mistral_models/7B_instruct")  # change to extracted model dir
             self.tokenizer = MistralTokenizer.from_file("/userhome/hukeya/mistral_models/7B_instruct/tokenizer.model.v3")  # change to extracted tokenizer file
@@ -186,11 +190,23 @@ class LLM:
 
 
     def _new_request(self, prompt, kwargs):
-        if 'gpt' in kwargs['model']:
+        if 'gpt3.5' in kwargs['model']:
             chat_completion = self.client.chat.completions.create(
                 messages=prompt,
                 **kwargs,
             )
+        elif 'gpt2' in kwargs['model']:
+            print('here')
+            tokens = self.tokenizer.encode(prompt[1]['content'], return_tensors='pt')
+            out_tokens = self.client.generate(
+                input_ids=tokens,
+                do_sample=True,
+                temperature=0.9,
+                max_length=512,
+            )
+            chat_completion = self.tokenizer.decode(out_tokens[0], skip_special_tokens=True)
+            print("qwqqwqwq",chat_completion)
+            print('here')
         elif 'mistral' in kwargs['model']:
             from mistral_inference.model import Transformer
             from mistral_inference.generate import generate
