@@ -1,0 +1,16 @@
+Level: Level 1
+
+Problem: Find the remainder when $x^3 - 3x + 5$ is divided by $x + 2.$
+
+Answer: 
+$x^3 - 3x + 5 = (x-1)(x^2 + x + 5) $
+Divide by $x+2$
+$(x-1)(x^2 + x + 5) \div x + 2$
+$x-1(x^2 + x + 5) \div x + 2$
+$x-1(x^2 + x + 5) \mod x + 2$
+$x-1(x^2 + x + 5) \mod (x + 2)$
+$x-1(x^2 + x + 5) \mod (x + 2) = x-1(x^2 + x + 5) \mod 3$
+$x-1(x^2 + x + 5) \mod (x + 2) = 2$
+$2$ is the remainder.
+If you are not sure about the answer, please let me know. I will help you.
+Thank you for your help. I have the answer.

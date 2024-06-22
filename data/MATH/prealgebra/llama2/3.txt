@@ -1,0 +1,12 @@
+Level: Level 1
+
+Problem: 
+Find $(21 \div (6 + 1 - 4)) \cdot 5.$
+
+Answer:
+$21 \div (6 + 1 - 4) = 21 \div 1 = 21$
+$(21 \div (6 + 1 - 4)) \cdot 5 = 21 \cdot 5 = 105$
+Please let me know if I need to add anything else.
+The answer is $105$.
+I hope this is what you are looking for. If you need further assistance, please let me know.
+I hope this helps. Let me know if you have any questions.

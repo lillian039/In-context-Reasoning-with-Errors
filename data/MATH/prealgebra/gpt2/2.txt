@@ -1,0 +1,15 @@
+Level: Level 1
+
+Problem: Find the area in square feet of a square with a perimeter of 32ft.
+
+Answer:
+Find the area of a square to be near the nearest square, and then the area to be near the nearest square to the closest square to the nearest square to the nearest square is to be found. (For example, if the perimeter is 32ft.
+If it is 36ft. so then it is 32ft. Find another area of 24ft. If it is 36ft. so then it is 32ft.
+Find the location of the square around the perimeter.
+Find the area around the perimeter not far from the center of the square.
+Find the area just inside the perimeter.
+And finally, I'll explain some of the "why not take a look at the picture?" questions.
+So this is a little bit of a wrap for those interested in the rules and principles.
+Have a look at my post about the "what if" rules.
+And my last post about the "why not take a look at the picture?" question. So check it out!
+That's it for today's post, and I hope there is something to be learned from this post.

@@ -1,0 +1,14 @@
+Level: Level 1
+
+Problem: Let $p$ and $q$ satisfy $pq=9$ and $p+q=6$. What is the value of $p^2 + q^2$?
+
+Solution: For a fixed point, the equation is:
+For $p$, $q$$$$ the formula is
+And for $p+p$, $q$$ the formula is
+
+Answer: Here, the variable $p$ is zero (i.e., $p = 1$), but it represents the sum of the variables $j$ and $k$ in $p$. Let $q$ and $i$ each satisfy $q = 9$. The first expression shows the square of each variable:
+The second one shows the diagonal for the value of $q$ and $i$:
+The third expression also shows that $q = 0$. We can use any other values as a function of $q=9$, the first being $q = 14$.
+The final expression shows the value of q$, because we have $q/i=1$ and $q/i=10$. Since we cannot know the total square of $q$, we can use the value $c=1$ where c=(9).
+As usual, $q$ is just an expression of 1, and $q+q=6$ is just an expression of 2, since the difference of the two is 0. Then there is nothing to think about. In fact, the expression $p$ is just one variable, which would mean that $p=$1$ is $p^2$. The value $q$ would be the sum of the variables $j$, $k$ and $t$, for $p$. But only $j=8$, since $j1=-(j2-p)$. Thus $q$ is just a function of $q$, and the value $q==j$, and $q =0$. Thus, $q'$ is a variable of $J$. To get to the number of items that take into account $q$, we have $j'=$j$. So if $j'=1$, then $q\left(j+j)'$, and so on.
+This is an example of a simple proof in which we find an exact value of $\mathbb{R}$. We could say that this value is $j, i$ - where $j'\int_{j_1}=1$, $j+j=j$, $q', $q/i=1$, and $q/i = 2$. This would be very difficult, since

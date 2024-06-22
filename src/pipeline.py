@@ -64,24 +64,29 @@ def get_result(args, logger):
         examples_prompt = get_examples_swap(example_data, k_example)
     else:
         examples_prompt = get_examples(example_data, k_example, if_solution)
-    # logger.info(examples_prompt)
+    logger.info(examples_prompt)
     pass_task, fail_task = 0, 0
     max_try = 5
     logger.info(examples_prompt)
     for i, test_example in enumerate(test_data):
-        print('task ', i)
+        # print('task ', i)
         if type == 'zero_shot':
             content = get_zero_shot_learning(test_example['question'])
         else:
             content = get_incontext_learning(examples_prompt, test_example['question'])
+            if args.model == 'gpt':
+                content += "\nGive me the answer in the following format:\nSolution: [solution]\nFinal Answer: [final answer]"
         if if_solution:
             system = "Please give the solution of the math question and give the final answer."
         else:
             system = "Please give the final answer of the math question."
+        
         response = get_msg(content, system)
         for _ in range(max_try):
             logger.info(response)
-            if 'Final Answer:' not in response:
+            # if response is None:
+            #     print(content)
+            if response is None or 'Final Answer:' not in response:
                 response = get_msg(content, system)
             else:
                 break
@@ -99,7 +104,7 @@ def get_result(args, logger):
                 final_answer_number = final_answer.split('\n')[0]
                 # final_answer_number = int(re.sub(r'[^0-9]', '', final_answer))
         except:
-            print(final_answer)
+            # print(final_answer)
             final_answer_number = -1
 
 
@@ -116,7 +121,7 @@ def get_result(args, logger):
             from data.MATH.math_equivalence import is_equiv
             test_answer = test_example['answer']
             correct_answer_number = test_answer.split("####")[1].strip()
-            print(correct_answer_number)
+            # print(correct_answer_number)
             if is_equiv(final_answer_number, correct_answer_number):
                 pass_task += 1
             else:

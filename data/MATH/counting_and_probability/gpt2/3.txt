@@ -1,0 +1,15 @@
+Level: Level 1
+Problem: 
+A board game spinner is divided into three parts labeled $A$, $B$  and $C$. The probability of the spinner landing on $A$ is $\frac{1}{3}$ and the probability of the spinner landing on $B$ is $\frac{5}{12}$.  What is the probability of the spinner landing on $C$? Express your answer as a common fraction.
+
+Solution: 
+Now imagine the chance of landing on $G$. As we calculate the spinner, we then take the probability of its landing on $ G$ by 1. The probability of landing on $ G$ is $\frac{5}{12}$.
+
+Answer: 
+B = 2. At the end of the next section, the probability of landing on $G$ is $\frac{5}{12}$ and for $A$ it is approximately 2.5/10^16.
+Suppose that by adding $G$ and $A$ to produce $B$ and $\frac{5}{12}$, we are left with a $(G$ of $G$) of $G$, that is, $G$.
+And as we multiply the number of parts by the probability of landing on $B$, the probability of landing on $B$ is $\frac{5}{12}$.
+Answer: Let $A= \frac{5}{15} - \frac{11}{12}$. Let $B= \frac{4}{11} - \frac{4}{12}$. Let $C= \frac{4}{12} + \frac{4}{11}- \frac{11}{12}$. Let $D= \frac{4}{12}+ \frac{4}{12}+ \frac{4}{11}$. Let $E= \frac{4}{12}- \frac{4}{12}+ \frac{4}{12}$. Let $F= \frac{4}{12}- \frac{4}{12}+ \frac{4}{12}+. Let $G= \frac{4}{12}+ \frac{4}{12}-. Let $H= \frac{4}{12}- \frac{4}{12}+ \frac{4}{12}+ \frac{4}{12}. Let $I= \frac{4}{12}- \frac{4}{12}+ \frac{4}{12}-.
+We see that the probability of landing on $A$ is not less than the price of the spinner, but over $C$. If you were to go to any other game shop, they would only have the spinner up for sale. Then, if they purchased the same game with your spinner, with only different spinner configurations, they would be able to choose only the ones they would like. Therefore, a board game spinner costs $10.50 per item.
+The question here is:
+A board game spinner costs $10.50 per item to assemble

@@ -1,0 +1,13 @@
+Level: Level 1
+
+Problem: 
+Given that 10 is the arithmetic mean of the set $\{6, 13, 18, 4, x\}$, what is the value of $x$? 
+
+Solution: 
+The first of the three possible equations is given
+
+Answer:
+This value comes from the square root of the product, which is $t^2/3\:\[ 2^(-1)^2+\}\;\[ 2^(-1)^2-\;\;\;$
+Therefore
+x \le 2 $x\le 1 \le 3 $x$ is the sum of $\{0, 3, 5, 6}$, and $\{6, 13, 18, 4, x\}$
+

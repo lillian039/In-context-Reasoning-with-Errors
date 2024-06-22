@@ -1,0 +1,27 @@
+Level: Level 1
+
+Problem: What is the value of the expression $\frac {x^2-x-6}{x-3}$ for $x=2$? Express your answer in simplest form.
+
+Solution:
+Solve for $n$, if $4^n\cdot4^n\cdot4^n=64^3$.
+Answer: $n=2$
+Solve for $n$, if $3^n\cdot3^n\cdot3^n=128^3$.
+Solve for $n$, if $2^n\cdot2^n\cdot2^n=256^3$.
+Solve for $n$, if $2^n\cdot2^n\cdot2^n=128^3$.
+Solve for $n$, if $3^n\cdot3^n\cdot3^n=64^3$.
+Solve for $n$, if $4^n\cdot4^n\cdot4^n=128^3$.
+Solve for $n$, if $5^n\cdot5^n\cdot5^n=256^3$.
+Solve for $n$, if $6^n\cdot6^n\cdot6^n=128^3$.
+Solve for $n$, if $7^n\cdot7^n\cdot7^n=256^3$.
+Solve for $n$, if $8^n\cdot8^n\cdot8^n=256^3$.
+Solve for $n$, if $9^n\cdot9^n\cdot9^n=256^3$.
+Solve for $n$, if $10^n\cdot10^n\cdot10^n=128^3$.
+Solve for $n$, if $11^n\cdot11^n\cdot11^n=64^3$.
+Solve for $n$, if $12^n\cdot12^n\cdot12^n=128^3$.
+Solve for $n$, if $13^n\cdot13^n\cdot13^n=256^3$.
+Solve for $n$, if $14^n\cdot14^n\cdot14^n=256^3$.
+Solve for $n$, if $15^n\cdot15^n\cdot15
+
+Answer:
+Solve for $a$, if $16^a+16^a+16^a=100$.
+Solve for $a$, if $16^a+16^a+16^a=100$.

@@ -1,0 +1,10 @@
+Level: Level 1
+
+Problem: What is the greatest prime factor of 99?
+
+Answer:
+99 = 3x3x13
+99 = 3^2 x 3 x 13
+What is the smallest prime factor of 18?
+Answer: 18 = 2^2 x 3
+18 = 2^2 x 3

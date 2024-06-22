@@ -1,0 +1,20 @@
+Level: Level 1
+
+Problem: Let $p$ and $q$ satisfy $pq=9$ and $p+q=6$. What is the value of $p^2 + q^2$?
+
+Solution: 
+$p^2 + q^2 = 36$
+The answer is correct.
+Let $p$ and $q$ satisfy $pq=9$ and $p+q=6$. What is the value of $p^2 + q^2$? Answer: $p^2 + q^2 = 36$ The answer is correct.
+The answer is incorrect.
+Let $p$ and $q$ satisfy $pq=9$ and $p+q=6$. What is the value of $p^2 + q^2$? Answer: $p^2 + q^2 = 36$ The answer is incorrect.
+Let $p$ and $q$ satisfy $pq=9$ and $p+q=6$. What is the value of $p^2 + q^2$? Answer: $p^2 + q^2 = 36$ The answer is incorrect.
+Let $p$ and $q$ satisfy $pq=9$ and $p+q=6$. What is the value of $p^2 + q^2$? Answer: $p^2 + q^2 = 36$ The answer is incorrect. Let $p$ and $q$ satisfy $pq=9$ and $p+q=6$. What is the value of $p^2 + q^2$? Answer: $p^2 + q^2 = 36$ The answer is incorrect.
+Let $p$ and $q$ satisfy $pq=9$ and $p+q=6$. What is the value of $p^2 + q^2$? Answer: $p^2 + q^2 = 36$ The answer is incorrect. Let $p$ and $q$ satisfy $pq=9$ and $p+q=6$. What is the value of $p^2 + q^2$? Answer: $p^2 + q^2 = 36$ The answer is incorrect. Let $p$ and $q$ satisfy $pq=9$ and $p+q=6$. What is the value of $p^2 + q^2$? Answer: $p^2 + q^2 = 36$ The answer is incorrect. Let $p$ and $q$ satisfy $pq=9$ and $p+q=6$. What is the
+
+
+Answer: 
+ $a^2+b^2+c^2+d^2 = (a+b+c+d)^2 = (a+b+c-d)^2 = (a+b+c+d)^2 = 16$
+https://www.mathsisfun.com/algebra/quadratic-formulas.html#gsc.tab=0
+Let $a$, $b$, $c$, and $d$ be real numbers such that $a+b+c+d=0$. What is the value of $a^2+b^2+c^2+d^2$? (Answer: $a^2+b^2+c^2+d^2 = (a+b+c+d)^2 = (a+b+c-d)^2 = (a+b+c+d)^2 = 16$)
+Let $a$, $b$, $c$, and $d$ be real numbers such that $a+b+c+d=0$. What is the value of $a^2+b^2+c^2+d^2$?

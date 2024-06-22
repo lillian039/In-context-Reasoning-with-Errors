@@ -1,0 +1,24 @@
+Level: Level 1
+
+Problem:  The question is: Is $f(x) = 3^{x^2-3} - |x|$ an even function, odd function, or neither? Enter "odd", "even", or "neither".
+
+Answer: Why?
+
+Consider this example of a function that can be evaluated (by the same algorithm as above) and then written with "like" or "tolerant".
+
+The code below is written using the "like" function. The "like" expression is "like" because "like" is not a function of the kind "like f". That's because it is not a function of the kind "like v".
+
+f(x) = 1.48 + 1.48
+
+f(x) = f(x)/2 + f(x)
+
+(in this example, f(x) is true because you are evaluating on the x-axis whereas f(x) is false because your evaluation on the x-axis of the expression of "like f(x)" is false.)
+
+What the "like" expression can do if you don't have any fun in doing so is to take the result of the expression and return it. The fun expression of $f(x) = 3^{x^2-3} - |x| is equivalent to giving the result of evaluating "like v $f(x)} and then writing "like v $f(x)} - |x| because the fun expression has the "like f(x) = 3^{x^2-3} - |x|".
+
+Note that this example can be read as follows:
+
+<f-s> x = 2.44 + 1.49 <f-g> x = 3.14 + 1.60 <f-R> x = 2.55 + 1.61 <f-L> f = 3.14 + 1.57 <f-g> x = 3.14 + 1.57 <s> s = 5.00 /5 <s> s = 2.25 /2 <g> g = 4.44 /3 <r> r = 3.34 /3 <g> R = 2.55/2 <r> r = 3.34/3 <g> r = 3.34/3 <g>
+
+The fun expression of $f-X = 3.14 - 2.55
+

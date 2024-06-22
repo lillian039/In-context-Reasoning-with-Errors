@@ -1,0 +1,11 @@
+Level: Level 1
+
+Problem:  The question is: Is $f(x) = 3^{x^2-3} - |x|$ an even function, odd function, or neither? Enter "odd", "even", or "neither".
+
+Answer:  If $f(x)=3^{x^2-3}-|x|$ is even then $f(-x)=-3^{x^2-3}-|x|$ is even.
+
+Now if $f(-x)=-3^{x^2-3}-|x|$ is even then $f(x)=3^{x^2-3}-|x|$ is even.
+
+So $f(x)=3^{x^2-3}-|x|$ is even.
+
+Comment: You are welcome. If my answer helped you, please mark it as the accepted answer.

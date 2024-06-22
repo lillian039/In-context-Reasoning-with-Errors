@@ -1,0 +1,13 @@
+Level: Level 1
+
+Problem: Find the area in square feet of a square with a perimeter of 32ft.
+
+Answer:
+256 sq. ft.
+The area of a square is given by the formula:
+Area = length x width
+Length = perimeter / 4
+Area = 32 / 4 = 8 sq. ft.
+Width = 8 / 2 = 4 sq. ft.
+Area = 8 x 4 = 32 sq. ft.
+The area of a square with a perimeter of 32ft is 256 sq. ft.

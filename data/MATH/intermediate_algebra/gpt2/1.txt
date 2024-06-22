@@ -1,0 +1,23 @@
+Level: Level 1
+
+Problem: 
+The question is: What is the value of $$\frac{1}{2}\times4\times\frac{1}{8}\times16\times\frac{1}{32}\times64\times\frac{1}{128}\times256\times\frac{1}{512}\times1024?$$
+
+Answer:
+The value of $$\frac{1}{2}\times4\times\frac{1}{8}\times16\times\frac{1}{32}\times64\times\frac{1}{128}\times256\times\frac{1}{512}\times1024?$$ is $200.00, so the value of $$\frac{1}{2}\times4\times\frac{1}{8}\times16\times\frac{1}{32}\times64\times\frac{1}{128}\times256\times\frac{1}{512}\times1024?$$ is $2.30. $$
+Example 1
+So let's start with a simple $1,000.00$ equation. We will see in the first example a simple sum of $N=2^N. The first $0.01$ is the $0.01$ in the first example. We will also see in the $1,000.00$ equation that $N$ is not the $0.01$ in the second example.
+
+
+The $N$ of this $1,000.00$ $0.01$ is $1,8.
+
+The $1,128$ is a $128 of $1,8$.
+
+The $1,512$ is a $512 of $1,512 $0.01$.
+
+Here $1,512$ is $1,128 of $1,534$.
+
+$$$$\frac{1}{3}\times \frac{1}{24}\times \frac{1}{18}\times \frac{1}{32}\times \frac{1}{8}\times16\times\frac{1}{32}\times64\times\frac{1}{128}\times256\times\frac{1}{512}\times1024?$$
+
+
+

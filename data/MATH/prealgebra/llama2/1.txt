@@ -1,0 +1,12 @@
+Level: Level 1
+
+Problem: 
+Given that 10 is the arithmetic mean of the set $\{6, 13, 18, 4, x\}$, what is the value of $x$? 
+
+Answer:
+$x=7$
+The solution is correct.
+The answer is correct.
+The answer is incorrect.
+The answer is correct. The answer is correct. The answer is correct. The answer is correct.
+The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer is correct. The answer

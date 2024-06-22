@@ -1,0 +1,12 @@
+Level: Level 1
+
+Problem: 
+The question is: What is the value of $$\frac{1}{2}\times4\times\frac{1}{8}\times16\times\frac{1}{32}\times64\times\frac{1}{128}\times256\times\frac{1}{512}\times1024?$$
+
+Answer:
+I tried to answer the question using the same method as the example, but I couldn't get the answer.
+I have a question about the formula.
+I understand the formula as follows:
+$$\frac{1}{2}\times4\times\frac{1}{8}\times16\times\frac{1}{32}\times64\times\frac{1}{128}\times256\times\frac{1}{512}\times1024=\frac{1}{2}\times\frac{1}{4}\times\frac{1}{8}\times\frac{1}{16}\times\frac{1}{32}\times\frac{1}{64}\times\frac{1}{128}\times\frac{1}{256}\times\frac{1}{512}\times\frac{1}{1024}=\frac{1}{2^9}\times\frac{1}{4^2}\times\frac{1}{8^1}\times\frac{1}{16^0}\times\frac{1}{32^0}\times\frac{1}{64^0}\times\frac{1}{128^0}\times\frac{1}{256^0}\times\frac{1}{512^0}\times\frac{1}{1024^0}=\frac{1}{2^9}\times\frac{1}{2^2}\times\frac{1}{2^1}\times\frac{1}{2^0}\times\frac{1}{2^0}\times\frac{1}{2^0}\times\frac{1}{2^0}\times\frac{1}{2^0}\times\frac{1}{2^0}\times\frac{1}{2^0}\times\frac{1}{2^0}\times\frac{1}{2^0}=\frac{1}{2^9}\times\frac{1}{2^0}\times\frac{1}{2^0}\times\frac{1}{2^0}\times\frac{1}{2^0}\times\frac{1}{2^0}\times\frac{1}{2^0}\
+
+

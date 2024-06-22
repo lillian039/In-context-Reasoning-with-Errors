@@ -1,0 +1,16 @@
+Level: Level 1
+
+Problem: Find the remainder when $x^3 - 3x + 5$ is divided by $x + 2.$
+
+Solution:
+There is no more solution than this - we did not get all the answer.
+Please find more info about the problem and its solutions (see the answer on my blog ).
+First, we have to do a quick search in the comments!
+
+Answer: 
+You can find it in the right place.
+If you click "Find, add" (from left to right) you can add a new number to the array, subtracting 5 from $x^3 and subtracting $7 from $x^7.
+If you click "Edit" (from left to right) you can add a new number to the array, subtracting $X from $x^X and subtracting 0 from $x^0. You can do some math or write down the value: $x^3 = $x + 2X + 5X $x^3 = $x + 2$ or $x = $x + 0X + 2$
+You can add a new number to the array and subtract it from the array. You can add numbers into that range and subtract the result. So, for example, if you add 1 to the array, you can add to it 1.5 to the current array. But in the following example, you can add 2 to a different range, so the value 2=4, and to add 3 to the current range, you could add the value 1.5 to a different range to get the value 0.5. So, the calculator will subtract $x^3+1 $x^3$ to calculate that $x^20. If you want, you can add a new number at a time. For example, if you add 1 to the array, you can add it 1 to the current range, and 0 to the new range, and so on, because 1.5 times is 10 times the value you add. That's 3.5 × 10 = 6. Now, if you had 2 as its last value, you can add 2 to the new array, with the new value 2 being 2.5 times your old value, which is 8 times. Now, if you added 2 to another range, you can add the value 2 to the new range, and add the new value to the new range. Now, if you added 1 to the array, you could add 1 to the new range, adding 1 to the current range, and so on, so the value 0 is 5 times $x^3 + 2x + 5X + 7 = 4$
+Now, if you have a 1 and 2 for the current
+
